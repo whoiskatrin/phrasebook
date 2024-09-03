@@ -1,0 +1,473 @@
+{
+  "categories": [
+    {
+      "name": "Greetings",
+      "phrases": [
+        {
+          "english": "Hello",
+          "chinese": "你好",
+          "pinyin": "Nǐ hǎo"
+        },
+        {
+          "english": "Goodbye",
+          "chinese": "再见",
+          "pinyin": "Zàijiàn"
+        },
+        {
+          "english": "What is your name?",
+          "chinese": "你叫什么名字？",
+          "pinyin": "Nǐ jiào shénme míngzì?"
+        },
+        {
+          "english": "Nice to meet you",
+          "chinese": "很高兴认识你",
+          "pinyin": "Hěn gāoxìng rènshi nǐ."
+        },
+        {
+          "english": "You're welcome",
+          "chinese": "不客气",
+          "pinyin": "Bú kèqi"
+        },
+        {
+          "english": "I'm sorry",
+          "chinese": "对不起？",
+          "pinyin": "Duìbuqǐ"
+        },
+        {
+          "english": "I can't speak Chinese.",
+          "chinese": "我不会说汉语",
+          "pinyin": "Wǒ bú huì shuō hànyǔ."
+        },
+        {
+          "english": "Do you speak English?",
+          "chinese": "你会说英语吗？",
+          "pinyin": "Nǐ huì shuō Yīngyǔ ma?"
+        },
+        {
+          "english": "Is there someone here who speaks English?",
+          "chinese": "这里有人会说英语吗？",
+          "pinyin": "Zhèlĭ yǒu rén hùi shuō Yīngyǔ ma?"
+        }
+      ]
+    },
+    {
+      "name": "Travel",
+      "phrases": [
+        {
+          "english": "Where is the bathroom?",
+          "chinese": "洗手间在哪里?",
+          "pinyin": "Xǐshǒujiān zài nǎlǐ?"
+        },
+        {
+          "english": "Do you go to the central station?",
+          "chinese": "去不去火车站?",
+          "pinyin": "qù bu qù huǒ chē zhàn"
+        },
+        {
+          "english": "Do you go to the airport?",
+          "chinese": "去不去飞机场?",
+          "pinyin": "qù bu qù fēi jī chǎng"
+        },
+        {
+          "english": "bus",
+          "chinese": "公交车",
+          "pinyin": "gōng jiāo chē",
+          "subcategory": "Vocabulary"
+        },
+        {
+          "english": "slow train",
+          "chinese": "火车",
+          "pinyin": "huǒ chē",
+          "subcategory": "Vocabulary"
+        },
+        {
+          "english": "high-speed train",
+          "chinese": "高铁",
+          "pinyin": "gāo tiě",
+          "subcategory": "Vocabulary"
+        },
+        {
+          "english": "metro / subway",
+          "chinese": "地铁",
+          "pinyin": "dì tiě",
+          "subcategory": "Vocabulary"
+        },
+        {
+          "english": "How do I get to the train station?",
+          "chinese": "怎么去火车站?",
+          "pinyin": "zěnme qù huǒchēzhàn?"
+        },
+        {
+          "english": "How do I get to the bus station?",
+          "chinese": "怎么去汽车站?",
+          "pinyin": "zěnme qù qìchēzhàn?"
+        },
+        {
+          "english": "How do I get to the airport?",
+          "chinese": "怎么去飞机场?",
+          "pinyin": "zěnme qù fēi jī chǎng?"
+        },
+        {
+          "english": "I've reached my destination",
+          "chinese": "到了",
+          "pinyin": "dàole"
+        },
+        {
+          "english": "Please turn up the aircon/heater",
+          "chinese": "请把空调开大点。",
+          "pinyin": "qǐng bǎ kōngtiáo kāi dàdiǎn"
+        },
+        {
+          "english": "Take me to ____, please.",
+          "chinese": "请开到...。",
+          "pinyin": "qǐng kāidào ...。"
+        }
+      ]
+    },
+    {
+      "name": "Problems",
+      "phrases": [
+        {
+          "english": "Leave me alone.",
+          "chinese": "不要打扰我。",
+          "pinyin": "búyào dǎrǎo wǒ"
+        },
+        {
+          "english": "I don't want it!",
+          "chinese": "我不要！",
+          "pinyin": "wǒ búyào!",
+          "explanation": "(useful for people who come up trying to sell you something)"
+        },
+        {
+          "english": "Don't touch me!",
+          "chinese": "不要碰我！",
+          "pinyin": "búyào pèng wǒ!"
+        },
+        {
+          "english": "Stop! Thief!",
+          "chinese": "住手！小偷！",
+          "pinyin": "zhùshǒu! xiǎotōu!"
+        },
+        {
+          "english": "It's an emergency.",
+          "chinese": "这是紧急情况。",
+          "pinyin": "zhèshì jǐnjí qíngkuàng"
+        },
+        {
+          "english": "I'm lost.",
+          "chinese": "我迷路了。",
+          "pinyin": "wǒ mílù le"
+        },
+        {
+          "english": "I need a doctor.",
+          "chinese": "我需要医生。",
+          "pinyin": "wǒ xūyào yīshēng"
+        }
+      ]
+    },
+    {
+        "name": "Food",
+        "phrases": [
+            {
+              "english": "beef",
+              "chinese": "牛肉",
+              "pinyin": "niúròu",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "pork",
+              "chinese": "猪肉",
+              "pinyin": "zhūròu",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "mutton",
+              "chinese": "羊肉",
+              "pinyin": "yángròu",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "chicken",
+              "chinese": "鸡肉",
+              "pinyin": "jīròu",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "duck",
+              "chinese": "鸭",
+              "pinyin": "yā",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "goose",
+              "chinese": "鹅",
+              "pinyin": "é",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "fish",
+              "chinese": "鱼",
+              "pinyin": "yú",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "shrimp",
+              "chinese": "虾",
+              "pinyin": "Xiā",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "fresh",
+              "chinese": "新鲜",
+              "pinyin": "xīnxiān",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "fruit",
+              "chinese": "水果",
+              "pinyin": "shuĭguǒ",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "greens",
+              "chinese": "青菜",
+              "pinyin": "qīngcài",
+              "subcategory": "Ingredients"
+            },
+            {
+                "english": "vegetables",
+                "chinese": "蔬菜",
+                "pinyin": "shūcài",
+                "subcategory": "Ingredients"
+              },
+            {
+              "english": "bread",
+              "chinese": "面包",
+              "pinyin": "miànbāo",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "noodles",
+              "chinese": "面条",
+              "pinyin": "miàntiáo",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "fried rice",
+              "chinese": "炒饭",
+              "pinyin": "chǎofàn",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "dumpling",
+              "chinese": "饺子",
+              "pinyin": "jiǎozi",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "cooked rice",
+              "chinese": "米饭",
+              "pinyin": "mĭfàn",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "raw rice",
+              "chinese": "米",
+              "pinyin": "mĭ",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "congee / rice porridge",
+              "chinese": "粥",
+              "pinyin": "zhōu / 稀饭 (稀飯) xīfàn",
+              "subcategory": "Ingredients"
+            },
+            {
+              "english": "Chongqing Hot Pot",
+              "chinese": "重庆火锅",
+              "pinyin": "Chóngqìng huǒguō",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Spicy Chicken (Chongqing Style)",
+              "chinese": "重庆辣子鸡",
+              "pinyin": "Chóngqìng làzǐ jī",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Sour and Spicy Noodles",
+              "chinese": "酸辣粉",
+              "pinyin": "suānlàfěn",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Grilled Fish",
+              "chinese": "烤鱼",
+              "pinyin": "kǎoyú",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Dandan Noodles",
+              "chinese": "担担面",
+              "pinyin": "dàndàn miàn",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Mouth-watering Chicken",
+              "chinese": "口水鸡",
+              "pinyin": "kǒushuǐ jī",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Fried Pig Intestines",
+              "chinese": "炒肥肠",
+              "pinyin": "chǎo féicháng",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Spicy Crayfish",
+              "chinese": "麻辣小龙虾",
+              "pinyin": "málà xiǎo lóngxiā",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Hot and Sour Soup",
+              "chinese": "酸辣汤",
+              "pinyin": "suānlà tāng",
+              "subcategory": "Dishes"
+            },
+            {
+              "english": "Sichuan-style Dumplings",
+              "chinese": "红油抄手",
+              "pinyin": "hóngyóu chāoshǒu",
+              "subcategory": "Dishes"
+            }
+          ]
+        },
+    {
+      "name": "Restaurants",
+      "phrases": [
+        {
+          "english": "Do you have an English menu?",
+          "chinese": "你有没有英文菜单？",
+          "pinyin": "nǐ yŏu méi yǒu yīngwén càidān?"
+        },
+        {
+          "english": "Do you have a table for two?",
+          "chinese": "您有两人桌吗？",
+          "pinyin": "yǒu liǎng rén zhuō ma?"
+        },
+        {
+          "english": "Yes, we have one.",
+          "chinese": "有",
+          "pinyin": "yǒu"
+        },
+        {
+          "english": "No, we don't.",
+          "chinese": "没有",
+          "pinyin": "méi yǒu"
+        },
+        {
+          "english": "Eat here",
+          "chinese": "这边吃",
+          "pinyin": "zhèbiān chī / 内用 (內用) nèi yòng"
+        },
+        {
+          "english": "Dine in",
+          "chinese": "堂吃",
+          "pinyin": "tángchī / 堂食 (堂食) tángshí"
+        },
+        {
+          "english": "Excuse me, waiter?",
+          "chinese": "服务员！",
+          "pinyin": "fúwùyuán"
+        },
+        {
+          "english": "It was delicious. (food)",
+          "chinese": "很好吃。",
+          "pinyin": "hěn hǎochī"
+        },
+        {
+          "english": "It was delicious. (drink)",
+          "chinese": "很好喝。",
+          "pinyin": "hěn hǎohē"
+        },
+        {
+          "english": "The check, please.",
+          "chinese": "买单",
+          "pinyin": "mǎidān"
+        },
+        {
+          "english": "Two beers, please.",
+          "chinese": "请给我两杯啤酒。",
+          "pinyin": "qǐng gěiwǒ liǎngbēi píjiǔ"
+        },
+        {
+          "english": "One more, please.",
+          "chinese": "请再给我一个。",
+          "pinyin": "qǐng zài gěi wǒ yíge"
+        },
+        {
+          "english": "Another round, please.",
+          "chinese": "请再来一轮。",
+          "pinyin": "qǐng zàilái yìlún"
+        },
+        {
+          "english": "Do you have any bar snacks?",
+          "chinese": "有没有吧台点心？",
+          "pinyin": "yǒu méiyǒu bātái diǎnxīn?"
+        }
+      ]
+    },
+    {
+      "name": "Places",
+      "phrases": [
+        {
+          "english": "Guilin West",
+          "chinese": "桂林西火车站",
+          "pinyin": ""
+        },
+        {
+          "english": "Yangshuo River Lodge Hotel",
+          "chinese": "阳朔碧水江景度假酒店",
+          "pinyin": ""
+        },
+        {
+          "english": "Yangshuo",
+          "chinese": "桂林阳朔",
+          "pinyin": ""
+        },
+        {
+          "english": "Regent Chongqing",
+          "chinese": "重庆丽晶酒店",
+          "pinyin": ""
+        },
+        {
+          "english": "Chongqing Jiangbei",
+          "chinese": "重庆江北国际机场",
+          "pinyin": ""
+        },
+        {
+          "english": "Shenzhen North",
+          "chinese": "深圳北",
+          "pinyin": ""
+        },
+        {
+          "english": "Yangji Longfu",
+          "chinese": "杨记隆",
+          "pinyin": ""
+        },
+        {
+          "english": "TestBed 2",
+          "chinese": "二厂文创园",
+          "pinyin": ""
+        },
+        {
+          "english": "Long Museum Chongqing",
+          "chinese": "龙美术馆（重庆馆）",
+          "pinyin": ""
+        }
+      ]
+    }
+  ]
+}

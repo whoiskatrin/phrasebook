@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B2073" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="symbol" optional="YES" attributeType="String"/>
+        <relationship name="phrases" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Phrase" inverseName="category" inverseEntity="Phrase"/>
+        <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Subcategory" inverseName="category" inverseEntity="Subcategory"/>
+    </entity>
+    <entity name="Language" representedClassName="Language" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="phrases" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Phrase" inverseName="language" inverseEntity="Phrase"/>
+    </entity>
+    <entity name="Phrase" representedClassName="Phrase" syncable="YES" codeGenerationType="class">
+        <attribute name="cachedAudio" optional="YES" attributeType="Binary"/>
+        <attribute name="english" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="romanization" optional="YES" attributeType="String"/>
+        <attribute name="translation" optional="YES" attributeType="String"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="phrases" inverseEntity="Category"/>
+        <relationship name="language" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" inverseName="phrases" inverseEntity="Language"/>
+        <relationship name="subcategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Subcategory" inverseName="phrases" inverseEntity="Subcategory"/>
+    </entity>
+    <entity name="Subcategory" representedClassName="Subcategory" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="subcategories" inverseEntity="Category"/>
+        <relationship name="phrases" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Phrase" inverseName="subcategory" inverseEntity="Phrase"/>
+    </entity>
+</model>
