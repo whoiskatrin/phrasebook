@@ -14,7 +14,6 @@
 		CB17AEDB2C82242A0098A8C6 /* PhrasebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17AEDA2C82242A0098A8C6 /* PhrasebookTests.swift */; };
 		CB17AEE52C82242A0098A8C6 /* PhrasebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17AEE42C82242A0098A8C6 /* PhrasebookUITests.swift */; };
 		CB17AEE72C82242A0098A8C6 /* PhrasebookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17AEE62C82242A0098A8C6 /* PhrasebookUITestsLaunchTests.swift */; };
-		CB17AEFE2C8230290098A8C6 /* ChineseMandarin.json in Resources */ = {isa = PBXBuildFile; fileRef = CB17AEFD2C8230290098A8C6 /* ChineseMandarin.json */; };
 		CB17AF002C835CDD0098A8C6 /* PhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17AEFF2C835CDD0098A8C6 /* PhrasesView.swift */; };
 		CB17AF022C8361970098A8C6 /* PhrasesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17AF012C8361970098A8C6 /* PhrasesCellView.swift */; };
 		CB17AF052C8474090098A8C6 /* Phrasebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB17AF032C8474080098A8C6 /* Phrasebook.xcdatamodeld */; };
@@ -23,6 +22,10 @@
 		CB17AF1F2C861AAA0098A8C6 /* NewPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17AF1E2C861AAA0098A8C6 /* NewPhraseView.swift */; };
 		CB17AF212C861B770098A8C6 /* NewCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17AF202C861B770098A8C6 /* NewCategoryView.swift */; };
 		CB17AF232C8621F70098A8C6 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17AF222C8621F70098A8C6 /* Translation.swift */; };
+		CB771B162C88D8D600780FAB /* ChineseMandarin.json in Resources */ = {isa = PBXBuildFile; fileRef = CB771B142C88D8D600780FAB /* ChineseMandarin.json */; };
+		CB771B4D2C88D9C900780FAB /* LanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB771B4C2C88D9C900780FAB /* LanguagePickerView.swift */; };
+		CB771B4F2C88FEDC00780FAB /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB771B4E2C88FEDC00780FAB /* LanguageManager.swift */; };
+		CB771B552C89D01800780FAB /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB771B542C89D01800780FAB /* CategoryGridView.swift */; };
 		CB8F3D702C8768FF00CDD5AB /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F3D6F2C8768FF00CDD5AB /* Components.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +57,6 @@
 		CB17AEE02C82242A0098A8C6 /* PhrasebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhrasebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB17AEE42C82242A0098A8C6 /* PhrasebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasebookUITests.swift; sourceTree = "<group>"; };
 		CB17AEE62C82242A0098A8C6 /* PhrasebookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasebookUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CB17AEFD2C8230290098A8C6 /* ChineseMandarin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChineseMandarin.json; sourceTree = "<group>"; };
 		CB17AEFF2C835CDD0098A8C6 /* PhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesView.swift; sourceTree = "<group>"; };
 		CB17AF012C8361970098A8C6 /* PhrasesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesCellView.swift; sourceTree = "<group>"; };
 		CB17AF042C8474090098A8C6 /* Phrasebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phrasebook.xcdatamodel; sourceTree = "<group>"; };
@@ -63,6 +65,10 @@
 		CB17AF1E2C861AAA0098A8C6 /* NewPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPhraseView.swift; sourceTree = "<group>"; };
 		CB17AF202C861B770098A8C6 /* NewCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCategoryView.swift; sourceTree = "<group>"; };
 		CB17AF222C8621F70098A8C6 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		CB771B142C88D8D600780FAB /* ChineseMandarin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChineseMandarin.json; sourceTree = "<group>"; };
+		CB771B4C2C88D9C900780FAB /* LanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerView.swift; sourceTree = "<group>"; };
+		CB771B4E2C88FEDC00780FAB /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		CB771B542C89D01800780FAB /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		CB8F3D6F2C8768FF00CDD5AB /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,13 +120,16 @@
 		CB17AEC82C8224280098A8C6 /* Phrasebook */ = {
 			isa = PBXGroup;
 			children = (
-				CB17AF1D2C86005D0098A8C6 /* Resources */,
+				CB771B152C88D8D600780FAB /* Resources */,
+				CB17AF032C8474080098A8C6 /* Phrasebook.xcdatamodeld */,
 				CB17AF082C847E210098A8C6 /* PreloadDataController.swift */,
 				CB17AEC92C8224280098A8C6 /* PhrasebookApp.swift */,
-				CB17AF032C8474080098A8C6 /* Phrasebook.xcdatamodeld */,
 				CB17AF062C847CD20098A8C6 /* PersistenceController.swift */,
 				CB17AECB2C8224280098A8C6 /* ContentView.swift */,
+				CB771B542C89D01800780FAB /* CategoryGridView.swift */,
 				CB17AF202C861B770098A8C6 /* NewCategoryView.swift */,
+				CB771B4C2C88D9C900780FAB /* LanguagePickerView.swift */,
+				CB771B4E2C88FEDC00780FAB /* LanguageManager.swift */,
 				CB17AEFF2C835CDD0098A8C6 /* PhrasesView.swift */,
 				CB17AF1E2C861AAA0098A8C6 /* NewPhraseView.swift */,
 				CB17AF012C8361970098A8C6 /* PhrasesCellView.swift */,
@@ -157,10 +166,10 @@
 			path = PhrasebookUITests;
 			sourceTree = "<group>";
 		};
-		CB17AF1D2C86005D0098A8C6 /* Resources */ = {
+		CB771B152C88D8D600780FAB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CB17AEFD2C8230290098A8C6 /* ChineseMandarin.json */,
+				CB771B142C88D8D600780FAB /* ChineseMandarin.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -270,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB17AED12C82242A0098A8C6 /* Preview Assets.xcassets in Resources */,
-				CB17AEFE2C8230290098A8C6 /* ChineseMandarin.json in Resources */,
+				CB771B162C88D8D600780FAB /* ChineseMandarin.json in Resources */,
 				CB17AECE2C82242A0098A8C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,10 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB771B552C89D01800780FAB /* CategoryGridView.swift in Sources */,
 				CB17AF072C847CD20098A8C6 /* PersistenceController.swift in Sources */,
+				CB771B4F2C88FEDC00780FAB /* LanguageManager.swift in Sources */,
 				CB17AECC2C8224280098A8C6 /* ContentView.swift in Sources */,
 				CB8F3D702C8768FF00CDD5AB /* Components.swift in Sources */,
 				CB17AECA2C8224280098A8C6 /* PhrasebookApp.swift in Sources */,
+				CB771B4D2C88D9C900780FAB /* LanguagePickerView.swift in Sources */,
 				CB17AF232C8621F70098A8C6 /* Translation.swift in Sources */,
 				CB17AF212C861B770098A8C6 /* NewCategoryView.swift in Sources */,
 				CB17AF022C8361970098A8C6 /* PhrasesCellView.swift in Sources */,
@@ -478,6 +490,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				ITSAppUsesNonExemptEncryption = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +520,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				ITSAppUsesNonExemptEncryption = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,8 +654,7 @@
 				CB17AF042C8474090098A8C6 /* Phrasebook.xcdatamodel */,
 			);
 			currentVersion = CB17AF042C8474090098A8C6 /* Phrasebook.xcdatamodel */;
-			name = Phrasebook.xcdatamodeld;
-			path = /Users/christine/Documents/Projects/Phrasebook/Phrasebook/Phrasebook.xcdatamodeld;
+			path = Phrasebook.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

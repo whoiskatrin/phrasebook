@@ -14,11 +14,16 @@ struct CategoryFormView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
     
+    
     @State private var categoryName: String
     @State private var selectedIcon: String
     @FocusState private var isFocused: Bool
     
     let existingCategory: Category?
+    
+    
+    @EnvironmentObject var languageManager: LanguageManager
+
     
     // Example icons for the grid
     let icons = ["folder.fill", "star.circle.fill", "fork.knife", "wineglass.fill", "bubble.left.and.text.bubble.right.fill", "bus", "airplane", "hand.raised.fill", "hand.wave.fill", "cross.case.fill", "bandage.fill", "cross.fill", "pills.fill", "map.fill", "heart.fill", "house.fill", "building.2.fill", "carrot.fill", "cup.and.saucer.fill", "fireworks", "party.popper.fill", "figure.dance", "figure.socialdance", "car.fill", "arrow.triangle.turn.up.right.diamond.fill", "building.columns.fill", "person.text.rectangle.fill", "sos.circle.fill", "bag.fill", "suitcase.cart.fill", "suitcase.rolling.fill", "bell.fill", "person.fill.questionmark", "shield.fill", "cloud.rain.fill", "mountain.2.fill"]
@@ -28,7 +33,7 @@ struct CategoryFormView: View {
         _categoryName = State(initialValue: category?.name ?? "")
         _selectedIcon = State(initialValue: category?.symbol ?? icons[0])
     }
-    
+
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -93,10 +98,20 @@ struct CategoryFormView: View {
         let category = existingCategory ?? Category(context: context)
         category.name = categoryName
         category.symbol = selectedIcon
+        
+        // Validate and associate the category with the current language
+        guard let currentLanguage = languageManager.currentLanguage else {
+            print("Error: No current language set in LanguageManager")
+            return
+        }
+        
+        category.language = currentLanguage
+        
+        print("Saving category '\(categoryName)' with symbol '\(selectedIcon)' to language: \(currentLanguage.name ?? "Unknown")")
 
         do {
             try context.save()
-            print("Category saved successfully.")
+            print("Category saved successfully to language: \(currentLanguage.name ?? "Unknown")")
         } catch {
             print("Failed to save category: \(error.localizedDescription)")
         }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import CoreData
 
 struct PhrasebookData: Codable {
@@ -14,6 +15,7 @@ struct PhrasebookData: Codable {
 
 struct CategoryData: Codable {
     let name: String
+    let symbol: String
     let phrases: [PhraseData]
 }
 
@@ -24,53 +26,144 @@ struct PhraseData: Codable {
     let subcategory: String?  // Optional subcategory
 }
 
-struct PreloadDataController {
-    static func preloadData(context: NSManagedObjectContext) {
-        let fetchRequest: NSFetchRequest<Category> = Category.fetchRequest()
-        fetchRequest.fetchLimit = 1
+struct VoiceData {
+    let code: String
+    let name: String
+    let gender: String
+    let dialect: String
+}
 
-        // Check if data is already loaded
+struct PreloadDataController {
+    @EnvironmentObject var languageManager: LanguageManager
+
+    static func preloadData(context: NSManagedObjectContext) {
+        let languages = [
+            (
+                name: "Chinese (Mandarin)",
+                code: "zh-CN",
+                codeTranslation: "zh-Hans",
+                jsonFileName: "ChineseMandarin",
+                hasJson: true,
+                hasTransliteration: true,
+                emoji: "🇨🇳",
+                voices: [
+                    VoiceData(code: "XiaoxiaoNeural", name: "Xiaoxiao", gender: "female", dialect: "Mandarin"),
+                    VoiceData(code: "YunxiNeural", name: "Yunxi", gender: "male", dialect: "Mandarin"),
+                    VoiceData(code: "henan-YundengNeural", name: "Yundeng", gender: "male", dialect: "Zhongyuan Mandarin Henan")
+                ]
+            ),
+            (
+                name: "Chinese (Cantonese)",
+                code: "zh-HK",
+                codeTranslation: "zh-HK",
+                jsonFileName: "ChineseCantonese",
+                hasJson: false,
+                hasTransliteration: true,
+                emoji: "🇭🇰",
+                voices: [
+                    VoiceData(code: "HiuMaanNeural", name: "HiuMaan", gender: "female", dialect: ""),
+                    VoiceData(code: "WanLungNeural", name: "WanLung", gender: "male", dialect: "")
+                ]
+            ),
+            // Add more languages here in the future, e.g.:
+        ]
+        for language in languages {
+            preloadLanguage(name: language.name, code: language.code, codeTranslation: language.codeTranslation, jsonFileName: language.jsonFileName, hasTransliteration: language.hasTransliteration, emoji: language.emoji, voices: language.voices,  hasJson: language.hasJson, context: context)
+        }
+        
+    }
+    
+    private static func preloadLanguage(name: String, code: String, codeTranslation: String, jsonFileName: String, hasTransliteration: Bool, emoji: String, voices: [VoiceData], hasJson: Bool, context: NSManagedObjectContext) {
+        // Check if language is already loaded
+        let languageFetchRequest: NSFetchRequest<Language> = Language.fetchRequest()
+        languageFetchRequest.predicate = NSPredicate(format: "code == %@", code)
+        
         do {
-            let count = try context.count(for: fetchRequest)
+            let count = try context.count(for: languageFetchRequest)
             if count > 0 {
-                // Data already loaded, no need to preload
+                print("Language \(name) already loaded, skipping...")
                 return
             }
         } catch {
-            print("Error checking for existing data: \(error)")
+            print("Error checking for existing language: \(error)")
+        }
+        
+        // Create new language
+        let language = Language(context: context)
+        language.id = UUID()
+        language.name = name
+        language.code = code
+        language.codeTranslation = codeTranslation
+        language.jsonFileName = jsonFileName
+        language.hasTransliteration = hasTransliteration
+        language.hasJson = hasJson
+        language.emoji = emoji
+
+        // Add voices
+        for voiceData in voices {
+            let voice = Voice(context: context)
+            voice.code = voiceData.code
+            voice.name = voiceData.name
+            voice.gender = voiceData.gender
+            voice.dialect = voiceData.dialect
+            voice.language = language
         }
 
-        // Load JSON file
-        guard let url = Bundle.main.url(forResource: "ChineseMandarin", withExtension: "json", subdirectory: "Resources"),
-              let data = try? Data(contentsOf: url) else {
-            print("Failed to load JSON file")
-            return
-        }
-
-        let decoder = JSONDecoder()
-        do {
-            let phrasebook = try decoder.decode(PhrasebookData.self, from: data)
-
-            for categoryData in phrasebook.categories {
-                let category = Category(context: context)
-                category.name = categoryData.name
-                //category.id = UUID()
-
-                for phraseData in categoryData.phrases {
-                    let phrase = Phrase(context: context)
-                    phrase.english = phraseData.english
-                    phrase.translation = phraseData.chinese
-                    phrase.romanization = phraseData.pinyin
-                   // phrase.id = UUID()
-                    phrase.category = category
-                }
+        if(hasJson == true){
+            // Load JSON file
+            guard let url = Bundle.main.url(forResource: jsonFileName, withExtension: "json") else {
+                print("Failed to find JSON file for \(name) in bundle: \(jsonFileName)")
+                return
             }
-
-            // Save the context
-            try context.save()
-
-        } catch {
-            print("Failed to decode JSON or save context: \(error)")
+            
+            let data: Data
+            do {
+                data = try Data(contentsOf: url)
+            } catch {
+                print("Failed to load JSON file for \(name): \(error.localizedDescription)")
+                return
+            }
+            
+            let decoder = JSONDecoder()
+            do {
+                let phrasebook = try decoder.decode(PhrasebookData.self, from: data)
+                
+                for (categoryIndex, categoryData) in phrasebook.categories.enumerated() {
+                    let category = Category(context: context)
+                    category.id = UUID()
+                    category.name = categoryData.name
+                    category.symbol = categoryData.symbol
+                    category.order = Int16(categoryIndex)
+                    category.language = language
+                    
+                    for (phraseIndex, phraseData) in categoryData.phrases.enumerated() {
+                        let phrase = Phrase(context: context)
+                        phrase.id = UUID()
+                        phrase.english = phraseData.english
+                        phrase.translation = phraseData.chinese
+                        phrase.romanization = phraseData.pinyin
+                        phrase.order = Int16(phraseIndex)
+                        phrase.category = category
+                        phrase.language = language
+                    }
+                }
+                
+                // Save the context
+                try context.save()
+                print("Successfully loaded data for \(name)")
+                
+            } catch {
+                print("Failed to decode JSON or save context for \(name): \(error)")
+            }
+        } else {
+            do {
+                try context.save()
+                print("Successfully loaded data for \(name)")
+            } catch {
+                print("Coudln't save json-less category \(name): \(error)")
+            }
         }
+        
+
     }
 }

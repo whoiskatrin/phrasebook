@@ -14,12 +14,13 @@ struct PhraseCellView: View {
     @State private var isLoadingAudio = false
     @State private var iconState: String = "play.circle.fill"
     
-    
     @StateObject private var audioPlayerManager = AudioPlayerManager()
     
     @Environment(\.managedObjectContext) private var viewContext
     
+    @EnvironmentObject var languageManager: LanguageManager
 
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
@@ -138,17 +139,27 @@ struct PhraseCellView: View {
         task.resume()
     }
     
+
     private func createSSML(for text: String) -> Data? {
+        guard let currentLanguage = languageManager.currentLanguage,
+              let languageCode = currentLanguage.code,
+              let firstVoice = currentLanguage.voices?.allObjects.first as? Voice,
+              let voiceName = firstVoice.code else {
+            print("Error: Missing language information or no voices available")
+            return nil
+        }
+        
+        print("Playing audio for \(languageCode)-\(voiceName)")
+        
         let ssml = """
-        <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/10/synthesis https://www.w3.org/TR/speech-synthesis11/synthesis.xsd" xml:lang="zh-CN">
-            <voice name="zh-CN-XiaoxiaoNeural">
+        <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/10/synthesis https://www.w3.org/TR/speech-synthesis11/synthesis.xsd" xml:lang="\(languageCode)">
+            <voice name="\(languageCode)-\(voiceName)">
                 \(text)
             </voice>
         </speak>
         """
         return ssml.data(using: .utf8)
     }
-    
     private func saveAudioToCache(data: Data) {
         viewContext.perform {
             self.phrase.cachedAudio = data

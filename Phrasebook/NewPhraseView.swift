@@ -27,6 +27,8 @@ struct NewPhraseView: View {
     @State private var translationTimer: Timer?
     private let debounceDuration: TimeInterval = 0.5
     
+    @EnvironmentObject var languageManager: LanguageManager
+
     @FocusState private var isFocused: Bool
     
     @FetchRequest(
@@ -154,15 +156,29 @@ struct NewPhraseView: View {
         }
         
         isLoading = true
-        translateToChinese(englishPhrase: englishPhrase) { translatedText, transliterationText in
-            DispatchQueue.main.async {
-                self.translatedPhrase = translatedText ?? ""
-                self.romanizedPhrase = transliterationText ?? ""
-                self.translationCompleted = true
-                self.isLoading = false
+        // Access currentLanguage from an instance of LanguageManager, not as a static property
+        if let selectedLanguage = languageManager.currentLanguage,  // Assuming languageManager is an instance
+           let codeTranslation = selectedLanguage.codeTranslation,
+           let languageName = selectedLanguage.name {
+
+            print("Trying to translate to: \(languageName) \(codeTranslation)")
+
+            // Call your translate function
+            translate(englishPhrase: englishPhrase, to: codeTranslation) { translatedText, transliteratedText in
+                DispatchQueue.main.async {
+                    // Update the UI on the main thread
+                    self.translatedPhrase = translatedText ?? ""
+                    self.romanizedPhrase = transliteratedText ?? ""
+                    self.translationCompleted = true
+                    self.isLoading = false
+                }
             }
-        }
-    }
+
+        } else {
+            // Handle the case where selectedLanguage or its properties are nil
+            print("Error: No language selected or missing language attributes.")
+            isLoading = false
+        }    }
 
     private func addPhrase() {
         guard !englishPhrase.isEmpty, !translatedPhrase.isEmpty else {
@@ -176,6 +192,8 @@ struct NewPhraseView: View {
         newPhrase.english = englishPhrase
         newPhrase.translation = translatedPhrase
         newPhrase.romanization = romanizedPhrase
+        newPhrase.language = languageManager.currentLanguage
+
         
         // Set the category to the current category
         newPhrase.category = currentCategory
