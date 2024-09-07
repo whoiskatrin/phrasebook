@@ -130,7 +130,7 @@ struct PhraseCellView: View {
                 if let data = data {
                     self.saveAudioToCache(data: data)
                     self.audioPlayerManager.playAudio(data: data)
-                    iconState = "pause.circle"
+                    iconState = "stop.circle"
                 } else {
                     print("No data received.")
                 }

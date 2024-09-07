@@ -6,58 +6,58 @@
       "phrases": [
         {
           "english": "Hello",
-          "cantonese": "你好",
-          "romanization": "nei5 hou2"
+          "translation": "你好",
+          "transliteration": "nei5 hou2"
         },
         {
           "english": "Goodbye",
-          "cantonese": "再見",
-          "romanization": "zoi3 gin3"
+          "translation": "再見",
+          "transliteration": "zoi3 gin3"
         },
         {
           "english": "Thank you",
-          "cantonese": "多謝",
-          "romanization": "do1 ze6"
+          "translation": "多謝",
+          "transliteration": "do1 ze6"
         },
         {
           "english": "You're welcome",
-          "cantonese": "唔使客氣",
-          "romanization": "m4 sai2 haak3 hei3"
+          "translation": "唔使客氣",
+          "transliteration": "m4 sai2 haak3 hei3"
         },
         {
           "english": "I'm sorry",
-          "cantonese": "對不起",
-          "romanization": "deoi3 bat1 hei2"
+          "translation": "對不起",
+          "transliteration": "deoi3 bat1 hei2"
         },
         {
           "english": "Where is the bathroom?",
-          "cantonese": "洗手間喺邊度?",
-          "romanization": "sai2 sau2 gaan1 hai2 bin1 dou6?"
+          "translation": "洗手間喺邊度?",
+          "transliteration": "sai2 sau2 gaan1 hai2 bin1 dou6?"
         },
         {
-          "english": "I can't speak Cantonese.",
-          "cantonese": "我唔識講廣東話",
-          "romanization": "ngo5 m4 sik1 gong2 gwong2 dung1 waa2"
+          "english": "I can't speak Chinese.",
+          "translation": "我唔識講廣東話",
+          "transliteration": "ngo5 m4 sik1 gong2 gwong2 dung1 waa2"
         },
         {
           "english": "Do you speak English?",
-          "cantonese": "你識唔識講英文？",
-          "romanization": "nei5 sik1 m4 sik1 gong2 jing1 man2?"
+          "translation": "你識唔識講英文？",
+          "transliteration": "nei5 sik1 m4 sik1 gong2 jing1 man2?"
         },
         {
           "english": "Is there someone here who speaks English?",
-          "cantonese": "呢度有冇人識講英文？",
-          "romanization": "ni1 dou6 jau5 mou5 jan4 sik1 gong2 jing1 man2?"
+          "translation": "呢度有冇人識講英文？",
+          "transliteration": "ni1 dou6 jau5 mou5 jan4 sik1 gong2 jing1 man2?"
         },
         {
           "english": "What is your name?",
-          "cantonese": "你叫咩名？",
-          "romanization": "nei5 giu3 me1 meng2?"
+          "translation": "你叫咩名？",
+          "transliteration": "nei5 giu3 me1 meng2?"
         },
         {
           "english": "Nice to meet you",
-          "cantonese": "好高興認識你",
-          "romanization": "hou2 gou1 hing3 jing6 sik1 nei5"
+          "translation": "好高興認識你",
+          "transliteration": "hou2 gou1 hing3 jing6 sik1 nei5"
         }
       ]
     },
@@ -67,51 +67,51 @@
       "phrases": [
         {
           "english": "Do you go to the central station?",
-          "cantonese": "你去唔去中環站?",
-          "romanization": "nei5 heoi3 m4 heoi3 zung1 waan4 zaam6?"
+          "translation": "你去唔去中環站?",
+          "transliteration": "nei5 heoi3 m4 heoi3 zung1 waan4 zaam6?"
         },
         { 
           "english": "Do you go to the airport?",
-          "cantonese": "你去唔去機場?",
-          "romanization": "nei5 heoi3 m4 heoi3 gei1 coeng4?"
+          "translation": "你去唔去機場?",
+          "transliteration": "nei5 heoi3 m4 heoi3 gei1 coeng4?"
         },
         {
           "english": "I've reached my destination",
-          "cantonese": "到咗喇",
-          "romanization": "dou3 zo2 laa3"
+          "translation": "到咗喇",
+          "transliteration": "dou3 zo2 laa3"
         },
         {
           "english": "Please turn up the aircon/heater",
-          "cantonese": "麻煩開大啲冷氣/暖氣。",
-          "romanization": "maa4 faan4 hoi1 daai6 di1 laang5 hei3/nyun5 hei3"
+          "translation": "麻煩開大啲冷氣/暖氣。",
+          "transliteration": "maa4 faan4 hoi1 daai6 di1 laang5 hei3/nyun5 hei3"
         },
         {
           "english": "Take me to ..., please.",
-          "cantonese": "請載我去...",
-          "romanization": "cing2 zoi3 ngo5 heoi3 ..."
+          "translation": "請載我去...",
+          "transliteration": "cing2 zoi3 ngo5 heoi3 ..."
         },
         {
           "english": "bus",
-          "cantonese": "巴士",
-          "romanization": "baa1 si2",
+          "translation": "巴士",
+          "transliteration": "baa1 si2",
           "subcategory": "Vocabulary"
         },
         {
           "english": "train",
-          "cantonese": "火車",
-          "romanization": "fo2 ce1",
+          "translation": "火車",
+          "transliteration": "fo2 ce1",
           "subcategory": "Vocabulary"
         },
         {
           "english": "high-speed rail",
-          "cantonese": "高鐵",
-          "romanization": "gou1 tit3",
+          "translation": "高鐵",
+          "transliteration": "gou1 tit3",
           "subcategory": "Vocabulary"
         },
         {
           "english": "metro / subway",
-          "cantonese": "地鐵",
-          "romanization": "dei6 tit3",
+          "translation": "地鐵",
+          "transliteration": "dei6 tit3",
           "subcategory": "Vocabulary"
         }
       ]
@@ -122,38 +122,38 @@
       "phrases": [
         {
           "english": "Leave me alone.",
-          "cantonese": "唔好煩我。",
-          "romanization": "m4 hou2 faan4 ngo5"
+          "translation": "唔好煩我。",
+          "transliteration": "m4 hou2 faan4 ngo5"
         },
         {
           "english": "I don't want it!",
-          "cantonese": "我唔要！",
-          "romanization": "ngo5 m4 jiu3!"
+          "translation": "我唔要！",
+          "transliteration": "ngo5 m4 jiu3!"
         },
         {
           "english": "Don't touch me!",
-          "cantonese": "唔好摸我！",
-          "romanization": "m4 hou2 mo2 ngo5!"
+          "translation": "唔好摸我！",
+          "transliteration": "m4 hou2 mo2 ngo5!"
         },
         {
           "english": "Stop! Thief!",
-          "cantonese": "停手！賊仔！",
-          "romanization": "ting4 sau2! caak6 zai2!"
+          "translation": "停手！賊仔！",
+          "transliteration": "ting4 sau2! caak6 zai2!"
         },
         {
           "english": "It's an emergency.",
-          "cantonese": "呢個係緊急情況。",
-          "romanization": "ni1 go3 hai6 gan2 gap1 cing4 fong3"
+          "translation": "呢個係緊急情況。",
+          "transliteration": "ni1 go3 hai6 gan2 gap1 cing4 fong3"
         },
         {
           "english": "I'm lost.",
-          "cantonese": "我蕩失路。",
-          "romanization": "ngo5 dong6 sat1 lou6"
+          "translation": "我蕩失路。",
+          "transliteration": "ngo5 dong6 sat1 lou6"
         },
         {
           "english": "I need a doctor.",
-          "cantonese": "我需要睇醫生。",
-          "romanization": "ngo5 seoi1 jiu3 tai2 ji1 sang1"
+          "translation": "我需要睇醫生。",
+          "transliteration": "ngo5 seoi1 jiu3 tai2 ji1 sang1"
         }
       ]
     },
@@ -163,110 +163,110 @@
       "phrases": [
         {
           "english": "beef",
-          "cantonese": "牛肉",
-          "romanization": "ngau4 juk6",
+          "translation": "牛肉",
+          "transliteration": "ngau4 juk6",
           "subcategory": "Ingredients"
         },
         {
           "english": "pork",
-          "cantonese": "豬肉",
-          "romanization": "zyu1 juk6",
+          "translation": "豬肉",
+          "transliteration": "zyu1 juk6",
           "subcategory": "Ingredients"
         },
         {
           "english": "chicken",
-          "cantonese": "雞肉",
-          "romanization": "gai1 juk6",
+          "translation": "雞肉",
+          "transliteration": "gai1 juk6",
           "subcategory": "Ingredients"
         },
         {
           "english": "seafood",
-          "cantonese": "海鮮",
-          "romanization": "hoi2 sin1",
+          "translation": "海鮮",
+          "transliteration": "hoi2 sin1",
           "subcategory": "Ingredients"
         },
         {
           "english": "vegetables",
-          "cantonese": "蔬菜",
-          "romanization": "so1 coi3",
+          "translation": "蔬菜",
+          "transliteration": "so1 coi3",
           "subcategory": "Ingredients"
         },
         {
           "english": "rice",
-          "cantonese": "白飯",
-          "romanization": "baak6 faan6",
+          "translation": "白飯",
+          "transliteration": "baak6 faan6",
           "subcategory": "Ingredients"
         },
         {
           "english": "noodles",
-          "cantonese": "麵",
-          "romanization": "min6",
+          "translation": "麵",
+          "transliteration": "min6",
           "subcategory": "Ingredients"
         },
         {
           "english": "Dim Sum",
-          "cantonese": "點心",
-          "romanization": "dim2 sam1",
+          "translation": "點心",
+          "transliteration": "dim2 sam1",
           "subcategory": "Dishes"
         },
         {
           "english": "Char Siu (Barbecued Pork)",
-          "cantonese": "叉燒",
-          "romanization": "caa1 siu1",
+          "translation": "叉燒",
+          "transliteration": "caa1 siu1",
           "subcategory": "Dishes"
         },
         {
           "english": "Siu Mai (Pork Dumplings)",
-          "cantonese": "燒賣",
-          "romanization": "siu1 maai2",
+          "translation": "燒賣",
+          "transliteration": "siu1 maai2",
           "subcategory": "Dishes"
         },
         {
           "english": "Har Gow (Shrimp Dumplings)",
-          "cantonese": "蝦餃",
-          "romanization": "haa1 gaau2",
+          "translation": "蝦餃",
+          "transliteration": "haa1 gaau2",
           "subcategory": "Dishes"
         },
         {
           "english": "Egg Tart",
-          "cantonese": "蛋撻",
-          "romanization": "daan6 taat1",
+          "translation": "蛋撻",
+          "transliteration": "daan6 taat1",
           "subcategory": "Dishes"
         },
         {
           "english": "Beef Brisket Noodles",
-          "cantonese": "牛腩麵",
-          "romanization": "ngau4 naam5 min6",
+          "translation": "牛腩麵",
+          "transliteration": "ngau4 naam5 min6",
           "subcategory": "Dishes"
         },
         {
           "english": "Wonton Noodles",
-          "cantonese": "雲吞麵",
-          "romanization": "wan4 tan1 min6",
+          "translation": "雲吞麵",
+          "transliteration": "wan4 tan1 min6",
           "subcategory": "Dishes"
         },
         {
           "english": "Roast Goose",
-          "cantonese": "燒鵝",
-          "romanization": "siu1 ngo4",
+          "translation": "燒鵝",
+          "transliteration": "siu1 ngo4",
           "subcategory": "Dishes"
         },
         {
           "english": "Clay Pot Rice",
-          "cantonese": "煲仔飯",
-          "romanization": "bou1 zai2 faan6",
+          "translation": "煲仔飯",
+          "transliteration": "bou1 zai2 faan6",
           "subcategory": "Dishes"
         },
         {
           "english": "Pineapple Bun",
-          "cantonese": "菠蘿包",
-          "romanization": "bo1 lo4 baau1",
+          "translation": "菠蘿包",
+          "transliteration": "bo1 lo4 baau1",
           "subcategory": "Dishes"
         },
         {
           "english": "Fish Balls",
-          "cantonese": "魚蛋",
-          "romanization": "jyu4 daan2",
+          "translation": "魚蛋",
+          "transliteration": "jyu4 daan2",
           "subcategory": "Dishes"
         }
       ]
@@ -277,53 +277,53 @@
       "phrases": [
         {
           "english": "Do you have an English menu?",
-          "cantonese": "你哋有冇英文菜單？",
-          "romanization": "nei5 dei6 jau5 mou5 jing1 man2 coi3 daan1?"
+          "translation": "你哋有冇英文菜單？",
+          "transliteration": "nei5 dei6 jau5 mou5 jing1 man2 coi3 daan1?"
         },
         {
           "english": "Do you have a table for two?",
-          "cantonese": "有冇兩個人嘅位？",
-          "romanization": "jau5 mou5 loeng5 go3 jan4 ge3 wai2?"
+          "translation": "有冇兩個人嘅位？",
+          "transliteration": "jau5 mou5 loeng5 go3 jan4 ge3 wai2?"
         },
         {
           "english": "Yes, we have one.",
-          "cantonese": "有",
-          "romanization": "jau5"
+          "translation": "有",
+          "transliteration": "jau5"
         },
         {
           "english": "No, we don't.",
-          "cantonese": "冇",
-          "romanization": "mou5"
+          "translation": "冇",
+          "transliteration": "mou5"
         },
         {
           "english": "Eat here",
-          "cantonese": "呢度食",
-          "romanization": "ni1 dou6 sik6"
+          "translation": "呢度食",
+          "transliteration": "ni1 dou6 sik6"
         },
         {
           "english": "Dine in",
-          "cantonese": "堂食",
-          "romanization": "tong4 sik6"
+          "translation": "堂食",
+          "transliteration": "tong4 sik6"
         },
         {
           "english": "Excuse me, waiter?",
-          "cantonese": "唔該！",
-          "romanization": "m4 goi1!"
+          "translation": "唔該！",
+          "transliteration": "m4 goi1!"
         },
         {
           "english": "It was delicious. (food)",
-          "cantonese": "好好食。",
-          "romanization": "hou2 hou2 sik6"
+          "translation": "好好食。",
+          "transliteration": "hou2 hou2 sik6"
         },
         {
           "english": "It was delicious. (drink)",
-          "cantonese": "好好飲。",
-          "romanization": "hou2 hou2 jam2"
+          "translation": "好好飲。",
+          "transliteration": "hou2 hou2 jam2"
         },
         {
           "english": "The check, please.",
-          "cantonese": "埋單",
-          "romanization": "maai4 daan1"
+          "translation": "埋單",
+          "transliteration": "maai4 daan1"
         }
       ]
     },
@@ -333,48 +333,48 @@
       "phrases": [
         {
           "english": "beer",
-          "cantonese": "啤酒",
-          "romanization": "be1 zau2"
+          "translation": "啤酒",
+          "transliteration": "be1 zau2"
         },
         {  
           "english": "tea",
-          "cantonese": "茶",
-          "romanization": "caa4"
+          "translation": "茶",
+          "transliteration": "caa4"
         },
         {
           "english": "Hong Kong-style milk tea",
-          "cantonese": "港式奶茶",
-          "romanization": "gong2 sik1 naai5 caa4"
+          "translation": "港式奶茶",
+          "transliteration": "gong2 sik1 naai5 caa4"
         },
         {
           "english": "bubble tea",
-          "cantonese": "珍珠奶茶",
-          "romanization": "zan1 zyu1 naai5 caa4"
+          "translation": "珍珠奶茶",
+          "transliteration": "zan1 zyu1 naai5 caa4"
         },
         {
           "english": "coffee",
-          "cantonese": "咖啡",
-          "romanization": "gaa3 fe1"
+          "translation": "咖啡",
+          "transliteration": "gaa3 fe1"
         },
         {
           "english": "Two beers, please.",
-          "cantonese": "唔該兩杯啤酒。",
-          "romanization": "m4 goi1 loeng5 bui1 be1 zau2"
+          "translation": "唔該兩杯啤酒。",
+          "transliteration": "m4 goi1 loeng5 bui1 be1 zau2"
         },
         {
           "english": "One more, please.",
-          "cantonese": "唔該再來一個。",
-          "romanization": "m4 goi1 zoi3 loi4 jat1 go3"
+          "translation": "唔該再來一個。",
+          "transliteration": "m4 goi1 zoi3 loi4 jat1 go3"
         },
         {
           "english": "Another round, please.",
-          "cantonese": "唔該再來一round。",
-          "romanization": "m4 goi1 zoi3 loi4 jat1 raun1"
+          "translation": "唔該再來一round。",
+          "transliteration": "m4 goi1 zoi3 loi4 jat1 raun1"
         },
         {
           "english": "Do you have any bar snacks?",
-          "cantonese": "有冇小食？",
-          "romanization": "jau5 mou5 siu2 sik6?"
+          "translation": "有冇小食？",
+          "transliteration": "jau5 mou5 siu2 sik6?"
         }
       ]
     }

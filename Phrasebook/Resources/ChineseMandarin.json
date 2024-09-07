@@ -6,58 +6,58 @@
       "phrases": [
         {
           "english": "Hello",
-          "chinese": "你好",
-          "pinyin": "Nǐ hǎo"
+          "translation": "你好",
+          "transliteration": "Nǐ hǎo"
         },
         {
           "english": "Goodbye",
-          "chinese": "再见",
-          "pinyin": "Zàijiàn"
+          "translation": "再见",
+          "transliteration": "Zàijiàn"
         },
         {
           "english": "Thank you",
-          "chinese": "谢谢",
-          "pinyin": "Xièxiè"
+          "translation": "谢谢",
+          "transliteration": "Xièxiè"
         },
         {
           "english": "You're welcome",
-          "chinese": "不客气",
-          "pinyin": "Bú kèqi"
+          "translation": "不客气",
+          "transliteration": "Bú kèqi"
         },
         {
           "english": "I'm sorry",
-          "chinese": "对不起？",
-          "pinyin": "Duìbuqǐ"
+          "translation": "对不起？",
+          "transliteration": "Duìbuqǐ"
         },
         {
           "english": "Where is the bathroom?",
-          "chinese": "洗手间在哪里?",
-          "pinyin": "Xǐshǒujiān zài nǎlǐ?"
+          "translation": "洗手间在哪里?",
+          "transliteration": "Xǐshǒujiān zài nǎlǐ?"
         },
         {
           "english": "I can't speak Chinese.",
-          "chinese": "我不会说汉语",
-          "pinyin": "Wǒ bú huì shuō hànyǔ."
+          "translation": "我不会说汉语",
+          "transliteration": "Wǒ bú huì shuō hànyǔ."
         },
         {
           "english": "Do you speak English?",
-          "chinese": "你会说英语吗？",
-          "pinyin": "Nǐ huì shuō Yīngyǔ ma?"
+          "translation": "你会说英语吗？",
+          "transliteration": "Nǐ huì shuō Yīngyǔ ma?"
         },
         {
           "english": "Is there someone here who speaks English?",
-          "chinese": "这里有人会说英语吗？",
-          "pinyin": "Zhèlĭ yǒu rén hùi shuō Yīngyǔ ma?"
+          "translation": "这里有人会说英语吗？",
+          "transliteration": "Zhèlĭ yǒu rén hùi shuō Yīngyǔ ma?"
         },
         {
           "english": "What is your name?",
-          "chinese": "你叫什么名字？",
-          "pinyin": "Nǐ jiào shénme míngzì?"
+          "translation": "你叫什么名字？",
+          "transliteration": "Nǐ jiào shénme míngzì?"
         },
         {
           "english": "Nice to meet you",
-          "chinese": "很高兴认识你",
-          "pinyin": "Hěn gāoxìng rènshi nǐ."
+          "translation": "很高兴认识你",
+          "transliteration": "Hěn gāoxìng rènshi nǐ."
         }
       ]
     },
@@ -67,51 +67,51 @@
       "phrases": [
         {
           "english": "Do you go to the central station?",
-          "chinese": "去不去火车站?",
-          "pinyin": "qù bu qù huǒ chē zhàn"
+          "translation": "去不去火车站?",
+          "transliteration": "qù bu qù huǒ chē zhàn"
         },
         { 
           "english": "Do you go to the airport?",
-          "chinese": "去不去飞机场?",
-          "pinyin": "qù bu qù fēi jī chǎng"
+          "translation": "去不去飞机场?",
+          "transliteration": "qù bu qù fēi jī chǎng"
         },
         {
           "english": "I've reached my destination",
-          "chinese": "到了",
-          "pinyin": "dàole"
+          "translation": "到了",
+          "transliteration": "dàole"
         },
         {
           "english": "Please turn up the aircon/heater",
-          "chinese": "请把空调开大点。",
-          "pinyin": "qǐng bǎ kōngtiáo kāi dàdiǎn"
+          "translation": "请把空调开大点。",
+          "transliteration": "qǐng bǎ kōngtiáo kāi dàdiǎn"
         },
         {
           "english": "Take me to ..., please.",
-          "chinese": "请开到...",
-          "pinyin": "qǐng kāidào ..."
+          "translation": "请开到...",
+          "transliteration": "qǐng kāidào ..."
         },
         {
           "english": "bus",
-          "chinese": "公交车",
-          "pinyin": "gōng jiāo chē",
+          "translation": "公交车",
+          "transliteration": "gōng jiāo chē",
           "subcategory": "Vocabulary"
         },
         {
           "english": "slow train",
-          "chinese": "火车",
-          "pinyin": "huǒ chē",
+          "translation": "火车",
+          "transliteration": "huǒ chē",
           "subcategory": "Vocabulary"
         },
         {
           "english": "high-speed train",
-          "chinese": "高铁",
-          "pinyin": "gāo tiě",
+          "translation": "高铁",
+          "transliteration": "gāo tiě",
           "subcategory": "Vocabulary"
         },
         {
           "english": "metro / subway",
-          "chinese": "地铁",
-          "pinyin": "dì tiě",
+          "translation": "地铁",
+          "transliteration": "dì tiě",
           "subcategory": "Vocabulary"
         }
       ]
@@ -122,39 +122,39 @@
       "phrases": [
         {
           "english": "Leave me alone.",
-          "chinese": "不要打扰我。",
-          "pinyin": "búyào dǎrǎo wǒ"
+          "translation": "不要打扰我。",
+          "transliteration": "búyào dǎrǎo wǒ"
         },
         {
           "english": "I don't want it!",
-          "chinese": "我不要！",
-          "pinyin": "wǒ búyào!",
+          "translation": "我不要！",
+          "transliteration": "wǒ búyào!",
           "explanation": "(useful for people who come up trying to sell you something)"
         },
         {
           "english": "Don't touch me!",
-          "chinese": "不要碰我！",
-          "pinyin": "búyào pèng wǒ!"
+          "translation": "不要碰我！",
+          "transliteration": "búyào pèng wǒ!"
         },
         {
           "english": "Stop! Thief!",
-          "chinese": "住手！小偷！",
-          "pinyin": "zhùshǒu! xiǎotōu!"
+          "translation": "住手！小偷！",
+          "transliteration": "zhùshǒu! xiǎotōu!"
         },
         {
           "english": "It's an emergency.",
-          "chinese": "这是紧急情况。",
-          "pinyin": "zhèshì jǐnjí qíngkuàng"
+          "translation": "这是紧急情况。",
+          "transliteration": "zhèshì jǐnjí qíngkuàng"
         },
         {
           "english": "I'm lost.",
-          "chinese": "我迷路了。",
-          "pinyin": "wǒ mílù le"
+          "translation": "我迷路了。",
+          "transliteration": "wǒ mílù le"
         },
         {
           "english": "I need a doctor.",
-          "chinese": "我需要医生。",
-          "pinyin": "wǒ xūyào yīshēng"
+          "translation": "我需要医生。",
+          "transliteration": "wǒ xūyào yīshēng"
         }
       ]
     },
@@ -164,176 +164,176 @@
         "phrases": [
             {
               "english": "beef",
-              "chinese": "牛肉",
-              "pinyin": "niúròu",
+              "translation": "牛肉",
+              "transliteration": "niúròu",
               "subcategory": "Ingredients"
             },
             {
               "english": "pork",
-              "chinese": "猪肉",
-              "pinyin": "zhūròu",
+              "translation": "猪肉",
+              "transliteration": "zhūròu",
               "subcategory": "Ingredients"
             },
             {
               "english": "mutton",
-              "chinese": "羊肉",
-              "pinyin": "yángròu",
+              "translation": "羊肉",
+              "transliteration": "yángròu",
               "subcategory": "Ingredients"
             },
             {
               "english": "chicken",
-              "chinese": "鸡肉",
-              "pinyin": "jīròu",
+              "translation": "鸡肉",
+              "transliteration": "jīròu",
               "subcategory": "Ingredients"
             },
             {
               "english": "duck",
-              "chinese": "鸭",
-              "pinyin": "yā",
+              "translation": "鸭",
+              "transliteration": "yā",
               "subcategory": "Ingredients"
             },
             {
               "english": "goose",
-              "chinese": "鹅",
-              "pinyin": "é",
+              "translation": "鹅",
+              "transliteration": "é",
               "subcategory": "Ingredients"
             },
             {
               "english": "fish",
-              "chinese": "鱼",
-              "pinyin": "yú",
+              "translation": "鱼",
+              "transliteration": "yú",
               "subcategory": "Ingredients"
             },
             {
               "english": "shrimp",
-              "chinese": "虾",
-              "pinyin": "Xiā",
+              "translation": "虾",
+              "transliteration": "Xiā",
               "subcategory": "Ingredients"
             },
             {
               "english": "fresh",
-              "chinese": "新鲜",
-              "pinyin": "xīnxiān",
+              "translation": "新鲜",
+              "transliteration": "xīnxiān",
               "subcategory": "Ingredients"
             },
             {
               "english": "fruit",
-              "chinese": "水果",
-              "pinyin": "shuĭguǒ",
+              "translation": "水果",
+              "transliteration": "shuĭguǒ",
               "subcategory": "Ingredients"
             },
             {
               "english": "greens",
-              "chinese": "青菜",
-              "pinyin": "qīngcài",
+              "translation": "青菜",
+              "transliteration": "qīngcài",
               "subcategory": "Ingredients"
             },
             {
                 "english": "vegetables",
-                "chinese": "蔬菜",
-                "pinyin": "shūcài",
+                "translation": "蔬菜",
+                "transliteration": "shūcài",
                 "subcategory": "Ingredients"
               },
             {
               "english": "bread",
-              "chinese": "面包",
-              "pinyin": "miànbāo",
+              "translation": "面包",
+              "transliteration": "miànbāo",
               "subcategory": "Ingredients"
             },
             {
               "english": "noodles",
-              "chinese": "面条",
-              "pinyin": "miàntiáo",
+              "translation": "面条",
+              "transliteration": "miàntiáo",
               "subcategory": "Ingredients"
             },
             {
               "english": "fried rice",
-              "chinese": "炒饭",
-              "pinyin": "chǎofàn",
+              "translation": "炒饭",
+              "transliteration": "chǎofàn",
               "subcategory": "Ingredients"
             },
             {
               "english": "dumpling",
-              "chinese": "饺子",
-              "pinyin": "jiǎozi",
+              "translation": "饺子",
+              "transliteration": "jiǎozi",
               "subcategory": "Ingredients"
             },
             {
               "english": "cooked rice",
-              "chinese": "米饭",
-              "pinyin": "mĭfàn",
+              "translation": "米饭",
+              "transliteration": "mĭfàn",
               "subcategory": "Ingredients"
             },
             {
               "english": "raw rice",
-              "chinese": "米",
-              "pinyin": "mĭ",
+              "translation": "米",
+              "transliteration": "mĭ",
               "subcategory": "Ingredients"
             },
             {
               "english": "congee / rice porridge",
-              "chinese": "粥",
-              "pinyin": "zhōu / 稀饭 (稀飯) xīfàn",
+              "translation": "粥",
+              "transliteration": "zhōu / 稀饭 (稀飯) xīfàn",
               "subcategory": "Ingredients"
             },
             {
               "english": "Chongqing Hot Pot",
-              "chinese": "重庆火锅",
-              "pinyin": "Chóngqìng huǒguō",
+              "translation": "重庆火锅",
+              "transliteration": "Chóngqìng huǒguō",
               "subcategory": "Dishes"
             },
             {
               "english": "Spicy Chicken (Chongqing Style)",
-              "chinese": "重庆辣子鸡",
-              "pinyin": "Chóngqìng làzǐ jī",
+              "translation": "重庆辣子鸡",
+              "transliteration": "Chóngqìng làzǐ jī",
               "subcategory": "Dishes"
             },
             {
               "english": "Sour and Spicy Noodles",
-              "chinese": "酸辣粉",
-              "pinyin": "suānlàfěn",
+              "translation": "酸辣粉",
+              "transliteration": "suānlàfěn",
               "subcategory": "Dishes"
             },
             {
               "english": "Grilled Fish",
-              "chinese": "烤鱼",
-              "pinyin": "kǎoyú",
+              "translation": "烤鱼",
+              "transliteration": "kǎoyú",
               "subcategory": "Dishes"
             },
             {
               "english": "Dandan Noodles",
-              "chinese": "担担面",
-              "pinyin": "dàndàn miàn",
+              "translation": "担担面",
+              "transliteration": "dàndàn miàn",
               "subcategory": "Dishes"
             },
             {
               "english": "Mouth-watering Chicken",
-              "chinese": "口水鸡",
-              "pinyin": "kǒushuǐ jī",
+              "translation": "口水鸡",
+              "transliteration": "kǒushuǐ jī",
               "subcategory": "Dishes"
             },
             {
               "english": "Fried Pig Intestines",
-              "chinese": "炒肥肠",
-              "pinyin": "chǎo féicháng",
+              "translation": "炒肥肠",
+              "transliteration": "chǎo féicháng",
               "subcategory": "Dishes"
             },
             {
               "english": "Spicy Crayfish",
-              "chinese": "麻辣小龙虾",
-              "pinyin": "málà xiǎo lóngxiā",
+              "translation": "麻辣小龙虾",
+              "transliteration": "málà xiǎo lóngxiā",
               "subcategory": "Dishes"
             },
             {
               "english": "Hot and Sour Soup",
-              "chinese": "酸辣汤",
-              "pinyin": "suānlà tāng",
+              "translation": "酸辣汤",
+              "transliteration": "suānlà tāng",
               "subcategory": "Dishes"
             },
             {
               "english": "Sichuan-style Dumplings",
-              "chinese": "红油抄手",
-              "pinyin": "hóngyóu chāoshǒu",
+              "translation": "红油抄手",
+              "transliteration": "hóngyóu chāoshǒu",
               "subcategory": "Dishes"
             }
           ]
@@ -344,53 +344,53 @@
       "phrases": [
         {
           "english": "Do you have an English menu?",
-          "chinese": "你有没有英文菜单？",
-          "pinyin": "nǐ yŏu méi yǒu yīngwén càidān?"
+          "translation": "你有没有英文菜单？",
+          "transliteration": "nǐ yŏu méi yǒu yīngwén càidān?"
         },
         {
           "english": "Do you have a table for two?",
-          "chinese": "您有两人桌吗？",
-          "pinyin": "yǒu liǎng rén zhuō ma?"
+          "translation": "您有两人桌吗？",
+          "transliteration": "yǒu liǎng rén zhuō ma?"
         },
         {
           "english": "Yes, we have one.",
-          "chinese": "有",
-          "pinyin": "yǒu"
+          "translation": "有",
+          "transliteration": "yǒu"
         },
         {
           "english": "No, we don't.",
-          "chinese": "没有",
-          "pinyin": "méi yǒu"
+          "translation": "没有",
+          "transliteration": "méi yǒu"
         },
         {
           "english": "Eat here",
-          "chinese": "这边吃",
-          "pinyin": "zhèbiān chī"
+          "translation": "这边吃",
+          "transliteration": "zhèbiān chī"
         },
         {
           "english": "Dine in",
-          "chinese": "堂吃",
-          "pinyin": "tángchī"
+          "translation": "堂吃",
+          "transliteration": "tángchī"
         },
         {
           "english": "Excuse me, waiter?",
-          "chinese": "服务员！",
-          "pinyin": "fúwùyuán"
+          "translation": "服务员！",
+          "transliteration": "fúwùyuán"
         },
         {
           "english": "It was delicious. (food)",
-          "chinese": "很好吃。",
-          "pinyin": "hěn hǎochī"
+          "translation": "很好吃。",
+          "transliteration": "hěn hǎochī"
         },
         {
           "english": "It was delicious. (drink)",
-          "chinese": "很好喝。",
-          "pinyin": "hěn hǎohē"
+          "translation": "很好喝。",
+          "transliteration": "hěn hǎohē"
         },
         {
           "english": "The check, please.",
-          "chinese": "买单",
-          "pinyin": "mǎidān"
+          "translation": "买单",
+          "transliteration": "mǎidān"
         }
       ]
     },
@@ -400,48 +400,48 @@
       "phrases": [
         {
           "english": "beer",
-          "chinese": "啤酒",
-          "pinyin": "píjiǔ"
+          "translation": "啤酒",
+          "transliteration": "píjiǔ"
         },
         {  
           "english": "green tea",
-          "chinese": "绿茶",
-          "pinyin": "lǜchá"
+          "translation": "绿茶",
+          "transliteration": "lǜchá"
         },
         {
           "english": "black tea",
-          "chinese": "红茶",
-          "pinyin": "hóngchá"
+          "translation": "红茶",
+          "transliteration": "hóngchá"
         },
         {
           "english": "milk tea",
-          "chinese": "奶茶",
-          "pinyin": "nǎichá"
+          "translation": "奶茶",
+          "transliteration": "nǎichá"
         },
         {
           "english": "coffee",
-          "chinese": "咖啡",
-          "pinyin": "kāfēi"
+          "translation": "咖啡",
+          "transliteration": "kāfēi"
         },
         {
           "english": "Two beers, please.",
-          "chinese": "请给我两杯啤酒。",
-          "pinyin": "qǐng gěiwǒ liǎngbēi píjiǔ"
+          "translation": "请给我两杯啤酒。",
+          "transliteration": "qǐng gěiwǒ liǎngbēi píjiǔ"
         },
         {
           "english": "One more, please.",
-          "chinese": "请再给我一个。",
-          "pinyin": "qǐng zài gěi wǒ yíge"
+          "translation": "请再给我一个。",
+          "transliteration": "qǐng zài gěi wǒ yíge"
         },
         {
           "english": "Another round, please.",
-          "chinese": "请再来一轮。",
-          "pinyin": "qǐng zàilái yìlún"
+          "translation": "请再来一轮。",
+          "transliteration": "qǐng zàilái yìlún"
         },
         {
           "english": "Do you have any bar snacks?",
-          "chinese": "有没有吧台点心？",
-          "pinyin": "yǒu méiyǒu bātái diǎnxīn?"
+          "translation": "有没有吧台点心？",
+          "transliteration": "yǒu méiyǒu bātái diǎnxīn?"
         }
       ]
     }

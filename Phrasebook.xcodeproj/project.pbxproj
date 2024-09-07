@@ -27,6 +27,7 @@
 		CB771B4F2C88FEDC00780FAB /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB771B4E2C88FEDC00780FAB /* LanguageManager.swift */; };
 		CB771B552C89D01800780FAB /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB771B542C89D01800780FAB /* CategoryGridView.swift */; };
 		CB8F3D702C8768FF00CDD5AB /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F3D6F2C8768FF00CDD5AB /* Components.swift */; };
+		CBA935792C8CBA8200ADB13B /* ChineseCantonese.json in Resources */ = {isa = PBXBuildFile; fileRef = CBA935782C8CBA8200ADB13B /* ChineseCantonese.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CB771B4E2C88FEDC00780FAB /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		CB771B542C89D01800780FAB /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		CB8F3D6F2C8768FF00CDD5AB /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		CBA935782C8CBA8200ADB13B /* ChineseCantonese.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChineseCantonese.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,19 +124,19 @@
 			children = (
 				CB771B152C88D8D600780FAB /* Resources */,
 				CB17AF032C8474080098A8C6 /* Phrasebook.xcdatamodeld */,
-				CB17AF082C847E210098A8C6 /* PreloadDataController.swift */,
-				CB17AEC92C8224280098A8C6 /* PhrasebookApp.swift */,
 				CB17AF062C847CD20098A8C6 /* PersistenceController.swift */,
+				CB17AEC92C8224280098A8C6 /* PhrasebookApp.swift */,
+				CB8F3D6F2C8768FF00CDD5AB /* Components.swift */,
 				CB17AECB2C8224280098A8C6 /* ContentView.swift */,
 				CB771B542C89D01800780FAB /* CategoryGridView.swift */,
 				CB17AF202C861B770098A8C6 /* NewCategoryView.swift */,
+				CB17AEFF2C835CDD0098A8C6 /* PhrasesView.swift */,
+				CB17AF012C8361970098A8C6 /* PhrasesCellView.swift */,
+				CB17AF1E2C861AAA0098A8C6 /* NewPhraseView.swift */,
 				CB771B4C2C88D9C900780FAB /* LanguagePickerView.swift */,
 				CB771B4E2C88FEDC00780FAB /* LanguageManager.swift */,
-				CB17AEFF2C835CDD0098A8C6 /* PhrasesView.swift */,
-				CB17AF1E2C861AAA0098A8C6 /* NewPhraseView.swift */,
-				CB17AF012C8361970098A8C6 /* PhrasesCellView.swift */,
 				CB17AF222C8621F70098A8C6 /* Translation.swift */,
-				CB8F3D6F2C8768FF00CDD5AB /* Components.swift */,
+				CB17AF082C847E210098A8C6 /* PreloadDataController.swift */,
 				CB17AECD2C82242A0098A8C6 /* Assets.xcassets */,
 				CB17AECF2C82242A0098A8C6 /* Preview Content */,
 			);
@@ -169,6 +171,7 @@
 		CB771B152C88D8D600780FAB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CBA935782C8CBA8200ADB13B /* ChineseCantonese.json */,
 				CB771B142C88D8D600780FAB /* ChineseMandarin.json */,
 			);
 			path = Resources;
@@ -278,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA935792C8CBA8200ADB13B /* ChineseCantonese.json in Resources */,
 				CB17AED12C82242A0098A8C6 /* Preview Assets.xcassets in Resources */,
 				CB771B162C88D8D600780FAB /* ChineseMandarin.json in Resources */,
 				CB17AECE2C82242A0098A8C6 /* Assets.xcassets in Resources */,

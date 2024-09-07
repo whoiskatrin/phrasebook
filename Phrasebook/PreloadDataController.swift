@@ -21,8 +21,8 @@ struct CategoryData: Codable {
 
 struct PhraseData: Codable {
     let english: String
-    let chinese: String
-    let pinyin: String
+    let translation: String
+    let transliteration: String?
     let subcategory: String?  // Optional subcategory
 }
 
@@ -55,10 +55,10 @@ struct PreloadDataController {
             (
                 name: "Chinese (Cantonese)",
                 code: "zh-HK",
-                codeTranslation: "zh-HK",
+                codeTranslation: "yue",
                 jsonFileName: "ChineseCantonese",
-                hasJson: false,
-                hasTransliteration: true,
+                hasJson: true,
+                hasTransliteration: false,
                 emoji: "🇭🇰",
                 voices: [
                     VoiceData(code: "HiuMaanNeural", name: "HiuMaan", gender: "female", dialect: ""),
@@ -140,8 +140,8 @@ struct PreloadDataController {
                         let phrase = Phrase(context: context)
                         phrase.id = UUID()
                         phrase.english = phraseData.english
-                        phrase.translation = phraseData.chinese
-                        phrase.romanization = phraseData.pinyin
+                        phrase.translation = phraseData.translation
+                        phrase.romanization = phraseData.transliteration
                         phrase.order = Int16(phraseIndex)
                         phrase.category = category
                         phrase.language = language

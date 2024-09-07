@@ -23,8 +23,12 @@ struct Transliteration: Codable {
 }
 
 func translate(englishPhrase: String, to languageCode: String, completion: @escaping (String?, String?) -> Void) {
+    
     let apiKey = "efb201ece3c34951aa7047588f9f9348"
-    let endpoint = "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=\(languageCode)&toScript=latn"
+    var endpoint = "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=\(languageCode)"
+    if let currentLanguage = LanguageManager.shared.currentLanguage, currentLanguage.hasTransliteration {
+        endpoint += "&toScript=latn"
+    }
 
     guard let url = URL(string: endpoint) else {
         print("Invalid URL")

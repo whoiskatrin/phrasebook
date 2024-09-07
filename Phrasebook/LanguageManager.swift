@@ -1,68 +1,75 @@
+import Foundation
 import SwiftUI
 import CoreData
 
 class LanguageManager: ObservableObject {
-    @Published var currentLanguage: Language?  // Store the currently selected language
-    private var context: NSManagedObjectContext
+    static let shared = LanguageManager()
     
-    init(context: NSManagedObjectContext) {
-        self.context = context
-        loadCurrentLanguage()
+    private let viewContext: NSManagedObjectContext
+        
+    @Published var selectedLanguageID: UUID? {
+        didSet {
+            if let id = selectedLanguageID {
+                UserDefaults.standard.set(id.uuidString, forKey: "selectedLanguageID")
+                updateCurrentLanguage()
+            }
+        }
     }
     
-    // Load the last selected language or the default language on first app launch
-    func loadCurrentLanguage() {
+  @Published var currentLanguage: Language?
+
+    private init() {
+        let persistenceController = PersistenceController.shared
+        self.viewContext = persistenceController.container.viewContext
+        
+        if let savedIDString = UserDefaults.standard.string(forKey: "selectedLanguageID"),
+           let savedID = UUID(uuidString: savedIDString) {
+            self.selectedLanguageID = savedID
+        } else {
+            initializeDefaultLanguage()
+        }
+        
+        updateCurrentLanguage()
+    }
+    
+    private func initializeDefaultLanguage() {
         let fetchRequest: NSFetchRequest<Language> = Language.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "name == %@", "Mandarin")
         
         do {
-            // Try to fetch the saved language
-            let languages = try context.fetch(fetchRequest)
-            if let savedLanguage = languages.first(where: { $0.isCurrent == true }) {
-                currentLanguage = savedLanguage
+            let results = try viewContext.fetch(fetchRequest)
+            if let mandarinLanguage = results.first {
+                self.selectedLanguageID = mandarinLanguage.id
             } else {
-                // Load default language if none selected
-                setDefaultLanguage()
+                print("Error: Mandarin language not found in the database")
             }
         } catch {
-            print("Failed to fetch languages: \(error.localizedDescription)")
+            print("Error fetching Mandarin language: \(error)")
         }
     }
     
-    // Switch to a new language and persist the change in Core Data
-    func switchLanguage(to newLanguage: Language) {
-        // Unset the old current language
-        if let current = currentLanguage {
-            current.isCurrent = false
+    private func updateCurrentLanguage() {
+        guard let id = selectedLanguageID else {
+            currentLanguage = nil
+            return
         }
         
-        // Set the new language as current
-        newLanguage.isCurrent = true
-        currentLanguage = newLanguage
-        
-        // Save the context
-        saveContext()
-    }
-    
-    private func saveContext() {
-        do {
-            try context.save()
-        } catch {
-            print("Failed to save context: \(error.localizedDescription)")
-        }
-    }
-    
-    private func setDefaultLanguage() {
-        // Assuming there is a default language defined in Core Data
         let fetchRequest: NSFetchRequest<Language> = Language.fetchRequest()
-        
-        fetchRequest.predicate = NSPredicate(format: "name == %@", "Chinese (Mandarin)")  // Example default language
+        fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
         
         do {
-            if let defaultLanguage = try context.fetch(fetchRequest).first {
-                switchLanguage(to: defaultLanguage)
-            }
+            let results = try viewContext.fetch(fetchRequest)
+            currentLanguage = results.first
         } catch {
-            print("Failed to fetch the default language: \(error.localizedDescription)")
+            print("Error fetching current language: \(error)")
+            currentLanguage = nil
         }
     }
+    
+    func switchLanguage(to language: Language) {
+        self.selectedLanguageID = language.id
+        self.currentLanguage = language
+    }
+
 }
+

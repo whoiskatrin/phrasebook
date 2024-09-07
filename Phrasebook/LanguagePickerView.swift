@@ -13,20 +13,18 @@ import SwiftUI
 struct LanguagePickerView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var languageManager: LanguageManager
-
     
     @FetchRequest(
-        entity: Language.entity(),
         sortDescriptors: [NSSortDescriptor(keyPath: \Language.name, ascending: true)],
         animation: .default)
-    var languages: FetchedResults<Language>
-
+    private var languages: FetchedResults<Language>
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Phrase.id, ascending: true)],
         animation: .default)
     private var phrases: FetchedResults<Phrase>
     
+    @EnvironmentObject private var languageManager: LanguageManager
 
     var body: some View {
         NavigationView {
@@ -57,7 +55,7 @@ struct LanguagePickerView: View {
                     .padding(.vertical, 10)
                 }
                 
-                Section("Switch Language") {
+                Section() {
                     ForEach(languages, id: \.self) { language in
                         if language.id != languageManager.currentLanguage?.id {
                             Button(action: {
@@ -72,13 +70,13 @@ struct LanguagePickerView: View {
                             }
                         }
                     }
+                } header: {
+                    Text("Select a language")
+                } footer: {
+                    Text("More languages coming soon")
                 }
                 .headerProminence(.increased)
                 .padding(0)
-                
-                Group {
-                    Text("More languages coming soon!")
-                }
             }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Languages")
