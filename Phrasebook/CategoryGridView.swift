@@ -66,9 +66,9 @@ struct CategoryGridView: View {
             }
             .zIndex(100)
         }
-        .shadow(color: .black.opacity(0.08), radius: 1.5, x: 0, y: 1)
-        .shadow(color: .black.opacity(0.06), radius: 16, x: 0, y: 6)
-        .shadow(color: .black.opacity(0.06), radius: 20, x: 0, y: 10)
+        .shadow(color: Color.primary.opacity(0.08), radius: 1.5, x: 0, y: 1)
+        .shadow(color: Color.primary.opacity(0.06), radius: 16, x: 0, y: 6)
+        .shadow(color: Color.primary.opacity(0.06), radius: 20, x: 0, y: 10)
 
     }
 }

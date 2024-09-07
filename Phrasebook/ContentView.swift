@@ -117,16 +117,17 @@ struct ContentView: View {
                     }
                     
                }
-               .navigationTitle("Phrasebook")
+               .navigationTitle("\(selectedLanguage?.nameShort ?? "") Phrasebook")
                .toolbar {
                     if let selectedLanguageID = languageManager.selectedLanguageID,
                        let selectedLanguage = languages.first(where: { $0.id == selectedLanguageID }) {
-                         ToolbarItem(placement: .navigationBarTrailing) {
-                              Button(action: presentLanguageSheet) {
-                                   Text(selectedLanguage.emoji ?? "🏳️")
-                              }
-                              .buttonStyle(.bordered)
-                              .controlSize(.small)
+                         let flagIcon = selectedLanguage.emoji ?? "🏳️"
+                         
+                         ToolbarItem(placement: .navigationBarLeading) {
+                            //  Button(flagIcon, systemImage: "arrowtriangle.down.fill",  action: presentLanguageSheet)
+                              Button(flagIcon,  action: presentLanguageSheet)
+                            //    .buttonStyle(.bordered)
+                            //  .controlSize(.small)
                          }
                     }}
                .sheet(isPresented: $isNewCategorySheetPresented) {

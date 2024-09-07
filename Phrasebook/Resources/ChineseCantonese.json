@@ -7,57 +7,57 @@
         {
           "english": "Hello",
           "translation": "你好",
-          "transliteration": "nei5 hou2"
+          "transliteration": "nei ho"
         },
         {
           "english": "Goodbye",
           "translation": "再見",
-          "transliteration": "zoi3 gin3"
+          "transliteration": "joi gin"
         },
         {
           "english": "Thank you",
           "translation": "多謝",
-          "transliteration": "do1 ze6"
+          "transliteration": "do jeh"
         },
         {
           "english": "You're welcome",
           "translation": "唔使客氣",
-          "transliteration": "m4 sai2 haak3 hei3"
+          "transliteration": "m sai haak hei"
         },
         {
           "english": "I'm sorry",
           "translation": "對不起",
-          "transliteration": "deoi3 bat1 hei2"
+          "transliteration": "deui bat hei"
         },
         {
           "english": "Where is the bathroom?",
           "translation": "洗手間喺邊度?",
-          "transliteration": "sai2 sau2 gaan1 hai2 bin1 dou6?"
+          "transliteration": "sai sau gaan hai bin dou?"
         },
         {
-          "english": "I can't speak Chinese.",
+          "english": "I can't speak Cantonese.",
           "translation": "我唔識講廣東話",
-          "transliteration": "ngo5 m4 sik1 gong2 gwong2 dung1 waa2"
+          "transliteration": "ngo m sik gong gwong dung waa"
         },
         {
           "english": "Do you speak English?",
           "translation": "你識唔識講英文？",
-          "transliteration": "nei5 sik1 m4 sik1 gong2 jing1 man2?"
+          "transliteration": "nei sik m sik gong ying man?"
         },
         {
           "english": "Is there someone here who speaks English?",
           "translation": "呢度有冇人識講英文？",
-          "transliteration": "ni1 dou6 jau5 mou5 jan4 sik1 gong2 jing1 man2?"
+          "transliteration": "ni dou yau mou yan sik gong ying man?"
         },
         {
           "english": "What is your name?",
           "translation": "你叫咩名？",
-          "transliteration": "nei5 giu3 me1 meng2?"
+          "transliteration": "nei giu meh meng?"
         },
         {
           "english": "Nice to meet you",
           "translation": "好高興認識你",
-          "transliteration": "hou2 gou1 hing3 jing6 sik1 nei5"
+          "transliteration": "ho gou hing ying sik nei"
         }
       ]
     },
@@ -68,50 +68,50 @@
         {
           "english": "Do you go to the central station?",
           "translation": "你去唔去中環站?",
-          "transliteration": "nei5 heoi3 m4 heoi3 zung1 waan4 zaam6?"
+          "transliteration": "nei heui m heui jung waan jaam?"
         },
-        { 
+        {
           "english": "Do you go to the airport?",
           "translation": "你去唔去機場?",
-          "transliteration": "nei5 heoi3 m4 heoi3 gei1 coeng4?"
+          "transliteration": "nei heui m heui gei cheung?"
         },
         {
           "english": "I've reached my destination",
           "translation": "到咗喇",
-          "transliteration": "dou3 zo2 laa3"
+          "transliteration": "dou jo la"
         },
         {
           "english": "Please turn up the aircon/heater",
           "translation": "麻煩開大啲冷氣/暖氣。",
-          "transliteration": "maa4 faan4 hoi1 daai6 di1 laang5 hei3/nyun5 hei3"
+          "transliteration": "ma faan hoi daai di laang hei/nyun hei"
         },
         {
           "english": "Take me to ..., please.",
           "translation": "請載我去...",
-          "transliteration": "cing2 zoi3 ngo5 heoi3 ..."
+          "transliteration": "ching joi ngo heui ..."
         },
         {
           "english": "bus",
           "translation": "巴士",
-          "transliteration": "baa1 si2",
+          "transliteration": "ba si",
           "subcategory": "Vocabulary"
         },
         {
           "english": "train",
           "translation": "火車",
-          "transliteration": "fo2 ce1",
+          "transliteration": "fo che",
           "subcategory": "Vocabulary"
         },
         {
           "english": "high-speed rail",
           "translation": "高鐵",
-          "transliteration": "gou1 tit3",
+          "transliteration": "go tit",
           "subcategory": "Vocabulary"
         },
         {
           "english": "metro / subway",
           "translation": "地鐵",
-          "transliteration": "dei6 tit3",
+          "transliteration": "dei tit",
           "subcategory": "Vocabulary"
         }
       ]
@@ -123,37 +123,37 @@
         {
           "english": "Leave me alone.",
           "translation": "唔好煩我。",
-          "transliteration": "m4 hou2 faan4 ngo5"
+          "transliteration": "m ho faan ngo"
         },
         {
           "english": "I don't want it!",
           "translation": "我唔要！",
-          "transliteration": "ngo5 m4 jiu3!"
+          "transliteration": "ngo m yiu!"
         },
         {
           "english": "Don't touch me!",
           "translation": "唔好摸我！",
-          "transliteration": "m4 hou2 mo2 ngo5!"
+          "transliteration": "m ho mo ngo!"
         },
         {
           "english": "Stop! Thief!",
           "translation": "停手！賊仔！",
-          "transliteration": "ting4 sau2! caak6 zai2!"
+          "transliteration": "ting sau! chaak jai!"
         },
         {
           "english": "It's an emergency.",
           "translation": "呢個係緊急情況。",
-          "transliteration": "ni1 go3 hai6 gan2 gap1 cing4 fong3"
+          "transliteration": "ni go hai gan gap ching fong"
         },
         {
           "english": "I'm lost.",
           "translation": "我蕩失路。",
-          "transliteration": "ngo5 dong6 sat1 lou6"
+          "transliteration": "ngo dong sat lou"
         },
         {
           "english": "I need a doctor.",
           "translation": "我需要睇醫生。",
-          "transliteration": "ngo5 seoi1 jiu3 tai2 ji1 sang1"
+          "transliteration": "ngo seui yiu tai yi sang"
         }
       ]
     },
@@ -164,109 +164,109 @@
         {
           "english": "beef",
           "translation": "牛肉",
-          "transliteration": "ngau4 juk6",
+          "transliteration": "ngau yuk",
           "subcategory": "Ingredients"
         },
         {
           "english": "pork",
           "translation": "豬肉",
-          "transliteration": "zyu1 juk6",
+          "transliteration": "jyu yuk",
           "subcategory": "Ingredients"
         },
         {
           "english": "chicken",
           "translation": "雞肉",
-          "transliteration": "gai1 juk6",
+          "transliteration": "gai yuk",
           "subcategory": "Ingredients"
         },
         {
           "english": "seafood",
           "translation": "海鮮",
-          "transliteration": "hoi2 sin1",
+          "transliteration": "hoi sin",
           "subcategory": "Ingredients"
         },
         {
           "english": "vegetables",
           "translation": "蔬菜",
-          "transliteration": "so1 coi3",
+          "transliteration": "so choi",
           "subcategory": "Ingredients"
         },
         {
           "english": "rice",
           "translation": "白飯",
-          "transliteration": "baak6 faan6",
+          "transliteration": "baak faan",
           "subcategory": "Ingredients"
         },
         {
           "english": "noodles",
           "translation": "麵",
-          "transliteration": "min6",
+          "transliteration": "min",
           "subcategory": "Ingredients"
         },
         {
           "english": "Dim Sum",
           "translation": "點心",
-          "transliteration": "dim2 sam1",
+          "transliteration": "dim sam",
           "subcategory": "Dishes"
         },
         {
           "english": "Char Siu (Barbecued Pork)",
           "translation": "叉燒",
-          "transliteration": "caa1 siu1",
+          "transliteration": "cha siu",
           "subcategory": "Dishes"
         },
         {
           "english": "Siu Mai (Pork Dumplings)",
           "translation": "燒賣",
-          "transliteration": "siu1 maai2",
+          "transliteration": "siu mai",
           "subcategory": "Dishes"
         },
         {
           "english": "Har Gow (Shrimp Dumplings)",
           "translation": "蝦餃",
-          "transliteration": "haa1 gaau2",
+          "transliteration": "ha gau",
           "subcategory": "Dishes"
         },
         {
           "english": "Egg Tart",
           "translation": "蛋撻",
-          "transliteration": "daan6 taat1",
+          "transliteration": "daan taat",
           "subcategory": "Dishes"
         },
         {
           "english": "Beef Brisket Noodles",
           "translation": "牛腩麵",
-          "transliteration": "ngau4 naam5 min6",
+          "transliteration": "ngau naam min",
           "subcategory": "Dishes"
         },
         {
           "english": "Wonton Noodles",
           "translation": "雲吞麵",
-          "transliteration": "wan4 tan1 min6",
+          "transliteration": "wan tan min",
           "subcategory": "Dishes"
         },
         {
           "english": "Roast Goose",
           "translation": "燒鵝",
-          "transliteration": "siu1 ngo4",
+          "transliteration": "siu ngo",
           "subcategory": "Dishes"
         },
         {
           "english": "Clay Pot Rice",
           "translation": "煲仔飯",
-          "transliteration": "bou1 zai2 faan6",
+          "transliteration": "bo jai faan",
           "subcategory": "Dishes"
         },
         {
           "english": "Pineapple Bun",
           "translation": "菠蘿包",
-          "transliteration": "bo1 lo4 baau1",
+          "transliteration": "bo lo bau",
           "subcategory": "Dishes"
         },
         {
           "english": "Fish Balls",
           "translation": "魚蛋",
-          "transliteration": "jyu4 daan2",
+          "transliteration": "yu daan",
           "subcategory": "Dishes"
         }
       ]
@@ -278,52 +278,52 @@
         {
           "english": "Do you have an English menu?",
           "translation": "你哋有冇英文菜單？",
-          "transliteration": "nei5 dei6 jau5 mou5 jing1 man2 coi3 daan1?"
+          "transliteration": "nei dei yau mou ying man choi daan?"
         },
         {
           "english": "Do you have a table for two?",
           "translation": "有冇兩個人嘅位？",
-          "transliteration": "jau5 mou5 loeng5 go3 jan4 ge3 wai2?"
+          "transliteration": "yau mou leung go yan ge wai?"
         },
         {
           "english": "Yes, we have one.",
           "translation": "有",
-          "transliteration": "jau5"
+          "transliteration": "yau"
         },
         {
           "english": "No, we don't.",
           "translation": "冇",
-          "transliteration": "mou5"
+          "transliteration": "mou"
         },
         {
           "english": "Eat here",
           "translation": "呢度食",
-          "transliteration": "ni1 dou6 sik6"
+          "transliteration": "ni dou sik"
         },
         {
           "english": "Dine in",
           "translation": "堂食",
-          "transliteration": "tong4 sik6"
+          "transliteration": "tong sik"
         },
         {
           "english": "Excuse me, waiter?",
           "translation": "唔該！",
-          "transliteration": "m4 goi1!"
+          "transliteration": "m goi!"
         },
         {
           "english": "It was delicious. (food)",
           "translation": "好好食。",
-          "transliteration": "hou2 hou2 sik6"
+          "transliteration": "ho ho sik"
         },
         {
           "english": "It was delicious. (drink)",
           "translation": "好好飲。",
-          "transliteration": "hou2 hou2 jam2"
+          "transliteration": "ho ho yam"
         },
         {
           "english": "The check, please.",
           "translation": "埋單",
-          "transliteration": "maai4 daan1"
+          "transliteration": "maai daan"
         }
       ]
     },
@@ -334,47 +334,47 @@
         {
           "english": "beer",
           "translation": "啤酒",
-          "transliteration": "be1 zau2"
+          "transliteration": "be jau"
         },
-        {  
+        {
           "english": "tea",
           "translation": "茶",
-          "transliteration": "caa4"
+          "transliteration": "cha"
         },
         {
           "english": "Hong Kong-style milk tea",
           "translation": "港式奶茶",
-          "transliteration": "gong2 sik1 naai5 caa4"
+          "transliteration": "gong sik naai cha"
         },
         {
           "english": "bubble tea",
           "translation": "珍珠奶茶",
-          "transliteration": "zan1 zyu1 naai5 caa4"
+          "transliteration": "jan jyu naai cha"
         },
         {
           "english": "coffee",
           "translation": "咖啡",
-          "transliteration": "gaa3 fe1"
+          "transliteration": "ga fe"
         },
         {
           "english": "Two beers, please.",
           "translation": "唔該兩杯啤酒。",
-          "transliteration": "m4 goi1 loeng5 bui1 be1 zau2"
+          "transliteration": "m goi leung bui be jau"
         },
         {
           "english": "One more, please.",
           "translation": "唔該再來一個。",
-          "transliteration": "m4 goi1 zoi3 loi4 jat1 go3"
+          "transliteration": "m goi joi loi yat go"
         },
         {
           "english": "Another round, please.",
           "translation": "唔該再來一round。",
-          "transliteration": "m4 goi1 zoi3 loi4 jat1 raun1"
+          "transliteration": "m goi joi loi yat raun"
         },
         {
           "english": "Do you have any bar snacks?",
           "translation": "有冇小食？",
-          "transliteration": "jau5 mou5 siu2 sik6?"
+          "transliteration": "yau mou siu sik?"
         }
       ]
     }

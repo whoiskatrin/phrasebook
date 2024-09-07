@@ -40,6 +40,7 @@ struct PreloadDataController {
         let languages = [
             (
                 name: "Chinese (Mandarin)",
+                nameShort: "Mandarin",
                 code: "zh-CN",
                 codeTranslation: "zh-Hans",
                 jsonFileName: "ChineseMandarin",
@@ -54,6 +55,7 @@ struct PreloadDataController {
             ),
             (
                 name: "Chinese (Cantonese)",
+                nameShort: "Cantonese",
                 code: "zh-HK",
                 codeTranslation: "yue",
                 jsonFileName: "ChineseCantonese",
@@ -68,12 +70,12 @@ struct PreloadDataController {
             // Add more languages here in the future, e.g.:
         ]
         for language in languages {
-            preloadLanguage(name: language.name, code: language.code, codeTranslation: language.codeTranslation, jsonFileName: language.jsonFileName, hasTransliteration: language.hasTransliteration, emoji: language.emoji, voices: language.voices,  hasJson: language.hasJson, context: context)
+            preloadLanguage(name: language.name, nameShort: language.nameShort, code: language.code, codeTranslation: language.codeTranslation, jsonFileName: language.jsonFileName, hasTransliteration: language.hasTransliteration, emoji: language.emoji, voices: language.voices,  hasJson: language.hasJson, context: context)
         }
         
     }
     
-    private static func preloadLanguage(name: String, code: String, codeTranslation: String, jsonFileName: String, hasTransliteration: Bool, emoji: String, voices: [VoiceData], hasJson: Bool, context: NSManagedObjectContext) {
+    private static func preloadLanguage(name: String, nameShort: String, code: String, codeTranslation: String, jsonFileName: String, hasTransliteration: Bool, emoji: String, voices: [VoiceData], hasJson: Bool, context: NSManagedObjectContext) {
         // Check if language is already loaded
         let languageFetchRequest: NSFetchRequest<Language> = Language.fetchRequest()
         languageFetchRequest.predicate = NSPredicate(format: "code == %@", code)
@@ -92,6 +94,7 @@ struct PreloadDataController {
         let language = Language(context: context)
         language.id = UUID()
         language.name = name
+        language.nameShort = nameShort
         language.code = code
         language.codeTranslation = codeTranslation
         language.jsonFileName = jsonFileName

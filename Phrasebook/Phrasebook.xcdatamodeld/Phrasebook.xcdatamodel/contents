@@ -20,6 +20,7 @@
         <attribute name="isCurrent" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="jsonFileName" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameShort" optional="YES" attributeType="String"/>
         <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="language" inverseEntity="Category"/>
         <relationship name="phrases" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Phrase" inverseName="language" inverseEntity="Phrase"/>
         <relationship name="voices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Voice" inverseName="language" inverseEntity="Voice"/>
@@ -28,6 +29,7 @@
         <attribute name="cachedAudio" optional="YES" attributeType="Binary"/>
         <attribute name="english" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isFavorited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="romanization" optional="YES" attributeType="String"/>
         <attribute name="translation" optional="YES" attributeType="String"/>
