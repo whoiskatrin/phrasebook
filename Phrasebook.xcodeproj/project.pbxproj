@@ -28,6 +28,7 @@
 		CB771B552C89D01800780FAB /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB771B542C89D01800780FAB /* CategoryGridView.swift */; };
 		CB8F3D702C8768FF00CDD5AB /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F3D6F2C8768FF00CDD5AB /* Components.swift */; };
 		CBA935792C8CBA8200ADB13B /* ChineseCantonese.json in Resources */ = {isa = PBXBuildFile; fileRef = CBA935782C8CBA8200ADB13B /* ChineseCantonese.json */; };
+		CBA9357B2C8CFAF100ADB13B /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9357A2C8CFAF100ADB13B /* NotificationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		CB771B542C89D01800780FAB /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		CB8F3D6F2C8768FF00CDD5AB /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		CBA935782C8CBA8200ADB13B /* ChineseCantonese.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChineseCantonese.json; sourceTree = "<group>"; };
+		CBA9357A2C8CFAF100ADB13B /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				CB17AECB2C8224280098A8C6 /* ContentView.swift */,
 				CB771B542C89D01800780FAB /* CategoryGridView.swift */,
 				CB17AF202C861B770098A8C6 /* NewCategoryView.swift */,
+				CBA9357A2C8CFAF100ADB13B /* NotificationExtension.swift */,
 				CB17AEFF2C835CDD0098A8C6 /* PhrasesView.swift */,
 				CB17AF012C8361970098A8C6 /* PhrasesCellView.swift */,
 				CB17AF1E2C861AAA0098A8C6 /* NewPhraseView.swift */,
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA9357B2C8CFAF100ADB13B /* NotificationExtension.swift in Sources */,
 				CB771B552C89D01800780FAB /* CategoryGridView.swift in Sources */,
 				CB17AF072C847CD20098A8C6 /* PersistenceController.swift in Sources */,
 				CB771B4F2C88FEDC00780FAB /* LanguageManager.swift in Sources */,

@@ -9,44 +9,34 @@ import Foundation
 import SwiftUI
 
 struct CategoryGridView: View {
-    var categories: [Category]
-    var colors: [Color]
-    var editCategory: (Category) -> Void
-    var deleteCategory: (Category) -> Void
-    var presentNewCategorySheet: () -> Void  // Closure to present new category sheet
-    
-    @EnvironmentObject var languageManager: LanguageManager  // Access current language
-    
-    let columns = [
-        GridItem(.flexible(), spacing: 16),
-        GridItem(.flexible(), spacing: 16)
-    ]
-    
+    let categories: FetchedResults<Category>
+    let colors: [Color]
+    let editCategory: (Category) -> Void
+    let deleteCategory: (Category) -> Void
+    let presentNewCategorySheet: () -> Void
+
     var body: some View {
-        LazyVGrid(columns: columns, spacing: 16) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))], spacing: 16) {
             ForEach(categories, id: \.self) { category in
-                if let currentLanguage = languageManager.currentLanguage {  // Ensure currentLanguage is available
-                    PressableCategoryTile(
-                        destination: PhrasesView(category: category, currentLanguage: currentLanguage),  // Pass the currentLanguage
-                        label: (category.name ?? "Unknown Category"),
-                        symbol: Image(systemName: category.symbol ?? "folder")
-                    )
-                    .contextMenu {
-                        Button {
-                            editCategory(category)
-                        } label: {
-                            Label("Edit", systemImage: "pencil")
-                        }
-                        Button(role: .destructive) {
-                            deleteCategory(category)
-                        } label: {
-                            Label("Delete", systemImage: "trash")
-                        }
+                PressableCategoryTile(
+                    destination: PhrasesView(category: category, currentLanguage: LanguageManager.shared.currentLanguage),
+                    label: (category.name ?? "Unknown Category"),
+                    symbol: Image(systemName: category.symbol ?? "folder")
+                )
+                .contextMenu {
+                    Button {
+                        editCategory(category)
+                    } label: {
+                        Label("Edit", systemImage: "pencil")
+                    }
+                    Button(role: .destructive) {
+                        deleteCategory(category)
+                    } label: {
+                        Label("Delete", systemImage: "trash")
                     }
                 }
             }
             
-            // Add Category Button
             Button(action: presentNewCategorySheet) {
                 VStack {
                     Image(systemName: "plus")
@@ -66,13 +56,8 @@ struct CategoryGridView: View {
             }
             .zIndex(100)
         }
-        .shadow(color: Color.primary.opacity(0.08), radius: 1.5, x: 0, y: 1)
-        .shadow(color: Color.primary.opacity(0.06), radius: 16, x: 0, y: 6)
-        .shadow(color: Color.primary.opacity(0.06), radius: 20, x: 0, y: 10)
-
     }
 }
-
 
 struct EmptyStateView: View {
     var presentNewCategorySheet: () -> Void  // Closure to present the new category sheet

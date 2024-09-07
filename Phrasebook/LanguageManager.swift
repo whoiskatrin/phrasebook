@@ -48,9 +48,11 @@ class LanguageManager: ObservableObject {
         }
     }
     
-    private func updateCurrentLanguage() {
+    func updateCurrentLanguage() {
         guard let id = selectedLanguageID else {
-            currentLanguage = nil
+            DispatchQueue.main.async {
+                self.currentLanguage = nil
+            }
             return
         }
         
@@ -59,13 +61,18 @@ class LanguageManager: ObservableObject {
         
         do {
             let results = try viewContext.fetch(fetchRequest)
-            currentLanguage = results.first
+            DispatchQueue.main.async {
+                self.currentLanguage = results.first
+            }
+            print("Current language updated: \(self.currentLanguage?.name ?? "None")")
         } catch {
             print("Error fetching current language: \(error)")
-            currentLanguage = nil
+            DispatchQueue.main.async {
+                self.currentLanguage = nil
+            }
         }
     }
-    
+
     func switchLanguage(to language: Language) {
         self.selectedLanguageID = language.id
         self.currentLanguage = language
